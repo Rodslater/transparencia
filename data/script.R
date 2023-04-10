@@ -32,9 +32,7 @@ orcamento_IFS <- orcamento %>%
   filter(CÓDIGO.ÓRGÃO.SUBORDINADO == "26423") %>%
   select(exercicio=EXERCÍCIO, orgao=NOME.ÓRGÃO.SUBORDINADO, funcao=NOME.FUNÇÃO, subfuncao=NOME.SUBFUNÇÃO, programa=NOME.PROGRAMA.ORÇAMENTÁRIO, acao=NOME.AÇÃO, cat_economica=NOME.CATEGORIA.ECONÔMICA, grupo_despesa=NOME.GRUPO.DE.DESPESA, elemento_despesa=NOME.ELEMENTO.DE.DESPESA, orc_inicial=ORÇAMENTO.INICIAL..R.., orc_atualizado=ORÇAMENTO.ATUALIZADO..R.., orc_empenhado=ORÇAMENTO.EMPENHADO..R.., orc_realizado=ORÇAMENTO.REALIZADO..R..)
   
-
 saveRDS(orcamento_IFS, 'data/orcamento_IFS.rds')
-
 
 
 ###### Receitas
