@@ -19,14 +19,13 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: |
-            any::gh
             any::dplyr
-            any::tidyr
-            any::readr
+            any::downloader
+            any::lubridate
             any::knitr
       - name: Execute Script
         run: |
-          Rscript "01-monitoring-quarto-repos/script.R"
+          Rscript "data/script.R"
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
