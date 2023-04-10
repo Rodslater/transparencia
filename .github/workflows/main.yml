@@ -22,7 +22,6 @@ jobs:
             any::dplyr
             any::downloader
             any::lubridate
-            any::knitr
       - name: Execute Script
         run: |
           Rscript "data/script.R"
