@@ -45,7 +45,7 @@ table <- viagens_IFS |>
 
 # Write the content on README
 paste0(
-  "# Repositories from quarto-dev
+  "# Viagens IFS
 Updated with GitHub Actions in ",
 format(Sys.Date(), '%b %d %Y'),
 ".
