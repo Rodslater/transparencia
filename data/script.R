@@ -16,7 +16,7 @@ viagens_IFS <- viagens %>%
   select(nome=Nome, cargo=Cargo,inicio=Período...Data.de.início, fim=Período...Data.de.fim, destino=Destinos, valor_diaria=Valor.diárias, valor_passagem=Valor.passagens, urgencia=Viagem.Urgente) %>% 
   mutate(inicio= dmy(inicio), fim= dmy(fim))
 
-saveRDS(viagens_IFS, paste0('data/',Sys.Date(),'_viagens_IFS','.rds'))
+saveRDS(viagens_IFS, 'data/viagens_IFS.rds')
 
 
 ###### Orçamento
@@ -33,7 +33,7 @@ orcamento_IFS <- orcamento %>%
   select(exercicio=EXERCÍCIO, orgao=NOME.ÓRGÃO.SUBORDINADO, funcao=NOME.FUNÇÃO, subfuncao=NOME.SUBFUNÇÃO, programa=NOME.PROGRAMA.ORÇAMENTÁRIO, acao=NOME.AÇÃO, cat_economica=NOME.CATEGORIA.ECONÔMICA, grupo_despesa=NOME.GRUPO.DE.DESPESA, elemento_despesa=NOME.ELEMENTO.DE.DESPESA, orc_inicial=ORÇAMENTO.INICIAL..R.., orc_atualizado=ORÇAMENTO.ATUALIZADO..R.., orc_empenhado=ORÇAMENTO.EMPENHADO..R.., orc_realizado=ORÇAMENTO.REALIZADO..R..)
   
 
-saveRDS(orcamento_IFS, paste0('data/',Sys.Date(),'_orcamento_IFS','.rds'))
+saveRDS(orcamento_IFS, 'data/orcamento_IFS.rds')
 
 
 
