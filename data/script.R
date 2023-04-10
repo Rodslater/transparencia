@@ -34,24 +34,3 @@ orcamento_IFS <- orcamento %>%
   
 
 saveRDS(orcamento_IFS, 'data/orcamento_IFS.rds')
-
-
-
-# write the README.md file
-
-# create table to add on README
-table <- viagens_IFS |>
-  knitr::kable()
-
-# Write the content on README
-paste0(
-  "# Viagens IFS
-Updated with GitHub Actions in ",
-format(Sys.Date(), '%b %d %Y'),
-".
-<hr> \n
-",
-paste(table, collapse = "\n")
-) |> writeLines("data/README.md")
-
-print("The end! Congrats!")
