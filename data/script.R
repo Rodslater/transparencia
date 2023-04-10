@@ -34,3 +34,23 @@ orcamento_IFS <- orcamento %>%
   
 
 saveRDS(orcamento_IFS, 'data/orcamento_IFS.rds')
+
+
+
+###### Receitas
+url3 <- "https://portaldatransparencia.gov.br/download-de-dados/receitas/2023"
+download(url3, dest="dataset.zip", mode="wb") 
+unzip ("dataset.zip")
+
+receitas  <- read.csv2("2023_Receitas.csv")
+
+file.remove(c('dataset.zip', '2023_Receitas.csv'))
+
+receitas_IFS <- receitas %>% 
+  filter(CÓDIGO.ÓRGÃO == "26423") %>%
+    select(exercicio=ANO.EXERCÍCIO, orgao=NOME.ÓRGÃO, ug=CÓDIGO.UNIDADE.GESTORA, cat_economica=CATEGORIA.ECONÔMICA, origem=ORIGEM.RECEITA, especie=ESPÉCIE.RECEITA, detalhamento=DETALHAMENTO, rec_prevista=VALOR.PREVISTO.ATUALIZADO, rec_lancada=VALOR.LANÇADO, rec_realizada=VALOR.REALIZADO, data=DATA.LANÇAMENTO)
+
+receitas_IFS <- receitas_IFS %>% 
+  mutate(data = dmy(data))
+
+saveRDS(receitas_IFS, 'data/receitas_IFS.rds')
