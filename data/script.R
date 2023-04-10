@@ -40,7 +40,7 @@ url3 <- "https://portaldatransparencia.gov.br/download-de-dados/receitas/2023"
 download(url3, dest="dataset.zip", mode="wb") 
 unzip ("dataset.zip")
 
-receitas  <- read.csv2("2023_Receitas.csv")
+receitas  <- read.csv2("2023_Receitas.csv", dec =",", fileEncoding='latin1')
 
 file.remove(c('dataset.zip', '2023_Receitas.csv'))
 
