@@ -40,7 +40,7 @@ saveRDS(orcamento_IFS, paste0('data/',Sys.Date(),'_orcamento_IFS','.rds'))
 # write the README.md file
 
 # create table to add on README
-table <- quarto_repos |>
+table <- viagens_IFS |>
   dplyr::mutate(description = tidyr::replace_na(description, "")) |>
   knitr::kable()
 
