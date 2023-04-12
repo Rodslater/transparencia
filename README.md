@@ -1,3 +1,3 @@
-# Teste
+# Transparência
 
-[![teste](https://github.com/Rodslater/teste/actions/workflows/main.yml/badge.svg)](https://github.com/Rodslater/teste/actions/workflows/main.yml)
+[![transparencia](https://github.com/Rodslater/transparencia/actions/workflows/main.yml/badge.svg)](https://github.com/Rodslater/transparencia/actions/workflows/main.yml)
