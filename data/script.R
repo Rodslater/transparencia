@@ -19,20 +19,20 @@ viagens_IFS <- viagens %>%
 saveRDS(viagens_IFS, 'data/viagens_IFS.rds')
 
 
-###### Despesas
+###### Orçamento
 url2 <- "https://portaldatransparencia.gov.br/download-de-dados/orcamento-despesa/2023"
 download(url2, dest="dataset.zip", mode="wb") 
 unzip ("dataset.zip")
 
-despesas  <- read.csv2("2023_OrcamentoDespesa.zip.csv", dec =",", fileEncoding='latin1')
+orcamento  <- read.csv2("2023_OrcamentoDespesa.zip.csv", dec =",", fileEncoding='latin1')
 
 file.remove(c('dataset.zip', '2023_OrcamentoDespesa.zip.csv'))
 
-despesas_IFS <- despesas %>% 
+orcamento_IFS <- orcamento %>% 
   filter(CÓDIGO.ÓRGÃO.SUBORDINADO == "26423") %>%
   select(exercicio=EXERCÍCIO, orgao=NOME.ÓRGÃO.SUBORDINADO, funcao=NOME.FUNÇÃO, subfuncao=NOME.SUBFUNÇÃO, programa=NOME.PROGRAMA.ORÇAMENTÁRIO, acao=NOME.AÇÃO, cat_economica=NOME.CATEGORIA.ECONÔMICA, grupo_despesa=NOME.GRUPO.DE.DESPESA, elemento_despesa=NOME.ELEMENTO.DE.DESPESA, orc_inicial=ORÇAMENTO.INICIAL..R.., orc_atualizado=ORÇAMENTO.ATUALIZADO..R.., orc_empenhado=ORÇAMENTO.EMPENHADO..R.., orc_realizado=ORÇAMENTO.REALIZADO..R..)
   
-saveRDS(despesas_IFS, 'data/despesas_IFS.rds')
+saveRDS(orcamento_IFS, 'data/orcamento_IFS.rds')
 
 
 ###### Receitas
