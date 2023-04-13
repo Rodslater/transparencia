@@ -1,6 +1,7 @@
 library(dplyr)
 library(downloader)
 library(lubridate)
+library(rio)
 
 ## Execução das despesas
 datas <- c(202301:202312, 202401:202412)
