@@ -14,7 +14,19 @@ for(i in seq_along(datas)) {
   })
 }
 
-despesas_IFS <- import_list(dir(pattern = ".csv"), rbind = TRUE)
+despesas <- import_list(dir(pattern = ".csv"), rbind = TRUE)
+despesas <- despesas[,c(1, 4, 5:7, 13, 15, 17, 19, 21, 27, 33, 35, 37, 39, 41, 42:47)]
+despesas <- despesas %>% 
+  mutate_at(vars(starts_with("Valor")),  funs(gsub("[,]", ".", .))) %>% 
+  mutate_at(vars(starts_with("Valor")), funs(as.numeric))
+  
+colnames(despesas) <- c("data_mes", "codigo_orgao", "orgao", "codigo_ug", "ug", "funcao", "subfuncao", "programa", 
+                     "acao", "plano", "subtitulo", "autor_emenda", "cat_economica", "grupo_despesa", 
+                     "elemento_despesa", "modalidade_despesa", "empenhado", "liquidado", "pago", "rp_inscrito", "rp_cancelado", "rp_pago")
+
+despesas_IFS <- despesas %>% 
+  filter(codigo_orgao == 26423) %>% 
+  mutate(data_mes=ym(data_mes))
 
 saveRDS(despesas_IFS, 'data/despesas_IFS.rds')
 
