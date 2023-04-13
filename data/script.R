@@ -16,13 +16,13 @@ for(i in seq_along(datas)) {
 
 despesas <- import_list(dir(pattern = ".csv"), rbind = TRUE)
 despesas <- despesas[,c(1, 4, 5:7, 13, 15, 17, 19, 21, 27, 33, 35, 37, 39, 41, 42:47)]
-despesas <-  despesas %>% 
-  mutate(across(starts_with("Valor"), ~str_replace(., ",", "."))) %>% 
-  mutate(across(starts_with("Valor"), as.numeric))
-  
 colnames(despesas) <- c("data_mes", "codigo_orgao", "orgao", "codigo_ug", "ug", "funcao", "subfuncao", "programa", 
                      "acao", "plano", "subtitulo", "autor_emenda", "cat_economica", "grupo_despesa", 
                      "elemento_despesa", "modalidade_despesa", "empenhado", "liquidado", "pago", "rp_inscrito", "rp_cancelado", "rp_pago")
+
+despesas <-  despesas %>% 
+  mutate(across(c("empenhado", "liquidado", "pago", "rp_inscrito", "rp_cancelado", "rp_pago"), ~str_replace(., ",", "."))) %>% 
+  mutate(across(c("empenhado", "liquidado", "pago", "rp_inscrito", "rp_cancelado", "rp_pago"), as.numeric))
 
 despesas_IFS <- despesas %>% 
   filter(codigo_orgao == 26423) %>% 
