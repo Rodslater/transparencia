@@ -14,9 +14,7 @@ for(i in seq_along(datas)) {
   })
 }
 
-despesas <- import_list(dir(pattern = ".csv"), rbind = TRUE)
-despesas_IFS <- despesas %>% 
-  filter(`Código Órgão Subordinado` == "26423")
+despesas_IFS <- import_list(dir(pattern = ".csv"), rbind = TRUE)
 
 saveRDS(despesas_IFS, 'data/despesas_IFS.rds')
 
