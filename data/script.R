@@ -2,6 +2,29 @@ library(dplyr)
 library(downloader)
 library(lubridate)
 
+## Execução das despesas
+datas <- c(202301:202312, 202401:202412)
+for(i in seq_along(datas)) {
+  try({url <- paste0('https://portaldatransparencia.gov.br/download-de-dados/despesas-execucao/', datas[i]) #Try passa pra o próximo em caso de erro.
+  arquivo <- sprintf("dataset_%s.zip", datas[i])
+  download(url, dest=arquivo, mode="wb") 
+  unzip (arquivo)
+  file.remove(arquivo)
+  })
+}
+
+despesas <- import_list(dir(pattern = ".csv"), rbind = TRUE)
+despesas_IFS <- despesas %>% 
+  filter(`Código Órgão Subordinado` == "26423")
+
+saveRDS(despesas_IFS, 'data/despesas_IFS.rds')
+
+arquivos_csv <- dir(pattern = ".csv")
+if (file.exists(arquivos_csv)) {
+  file.remove(arquivos_csv)
+}
+
+
 ###### Viagens
 url <- "https://portaldatransparencia.gov.br/download-de-dados/viagens/2023"
 download(url, dest="dataset.zip", mode="wb") 
