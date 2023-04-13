@@ -18,11 +18,6 @@ despesas_IFS <- import_list(dir(pattern = ".csv"), rbind = TRUE)
 
 saveRDS(despesas_IFS, 'data/despesas_IFS.rds')
 
-arquivos_csv <- dir(pattern = ".csv")
-if (file.exists(arquivos_csv)) {
-  file.remove(arquivos_csv)
-}
-
 
 ###### Viagens
 url <- "https://portaldatransparencia.gov.br/download-de-dados/viagens/2023"
