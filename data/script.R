@@ -14,7 +14,7 @@ for(i in seq_along(datas)) {
   })
 }
 
-despesas <- import_list(dir(pattern = ".csv"), rbind = TRUE)
+despesas <- import_list(dir(pattern = ".csv"), encoding = "Latin-1", rbind = TRUE)
 despesas <- despesas[,c(1, 4, 5:7, 13, 15, 17, 19, 21, 27, 33, 35, 37, 39, 41, 42:47)]
 
 colnames(despesas) <- c("data_mes", "codigo_orgao", "orgao", "codigo_ug", "ug", "funcao", "subfuncao", "programa", 
