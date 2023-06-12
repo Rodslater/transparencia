@@ -3,6 +3,8 @@ library(downloader)
 library(lubridate)
 library(rio)
 
+options(timeout=200)
+
 ## Execução das despesas
 datas <- c(202301:202312, 202401:202412)
 for(i in seq_along(datas)) {
