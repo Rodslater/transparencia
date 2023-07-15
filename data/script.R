@@ -3,6 +3,7 @@ library(downloader)
 library(lubridate)
 library(rio)
 
+memory.limit(24576)
 options(timeout=200)
 
 ## Execução das despesas
