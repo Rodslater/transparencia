@@ -51,17 +51,17 @@ viagens_IFS <- viagens %>%
   select(nome=Nome, cargo=Cargo,inicio=Período...Data.de.início, fim=Período...Data.de.fim, destino=Destinos, valor_diaria=Valor.diárias, valor_passagem=Valor.passagens, urgencia=Viagem.Urgente) %>% 
   mutate(inicio= dmy(inicio), fim= dmy(fim))
 
-saveRDS(viagens_IFS, 'data/viagens_IFS.rds')
+saveRDS(viagens_IFS, 'data/viagens_IFS_2023.rds')
 
 
 ###### Orçamento
-url2 <- "https://portaldatransparencia.gov.br/download-de-dados/orcamento-despesa/2023"
+url2 <- "https://portaldatransparencia.gov.br/download-de-dados/orcamento-despesa/2024"
 download(url2, dest="dataset.zip", mode="wb") 
 unzip ("dataset.zip")
 
-orcamento  <- read.csv2("2023_OrcamentoDespesa.zip.csv", dec =",", fileEncoding='latin1')
+orcamento  <- read.csv2("2024_OrcamentoDespesa.csv", dec =",", fileEncoding='latin1')
 
-file.remove(c('dataset.zip', '2023_OrcamentoDespesa.zip.csv'))
+file.remove(c('dataset.zip', '2024_OrcamentoDespesa.csv'))
 
 orcamento_IFS <- orcamento %>% 
   filter(CÓDIGO.ÓRGÃO.SUBORDINADO == "26423") %>%
@@ -71,13 +71,13 @@ saveRDS(orcamento_IFS, 'data/orcamento_IFS.rds')
 
 
 ###### Receitas
-url3 <- "https://portaldatransparencia.gov.br/download-de-dados/receitas/2023"
+url3 <- "https://portaldatransparencia.gov.br/download-de-dados/receitas/2024"
 download(url3, dest="dataset.zip", mode="wb") 
 unzip ("dataset.zip")
 
-receitas  <- read.csv2("2023_Receitas.csv", dec =",", fileEncoding='latin1')
+receitas  <- read.csv2("2024_Receitas.csv", dec =",", fileEncoding='latin1')
 
-file.remove(c('dataset.zip', '2023_Receitas.csv'))
+file.remove(c('dataset.zip', '2024_Receitas.csv'))
 
 receitas_IFS <- receitas %>% 
   filter(CÓDIGO.ÓRGÃO == "26423") %>%
