@@ -42,8 +42,8 @@ url <- "https://portaldatransparencia.gov.br/download-de-dados/viagens/2024"
 download(url, dest="dataset.zip", mode="wb") 
 unzip ("dataset.zip")
 
-viagens <- read.csv2("2023_Viagem.csv", dec =",", fileEncoding='latin1')
-file.remove(c('dataset.zip', '2023_Pagamento.csv', '2023_Passagem.csv', '2023_Trecho.csv', '2023_Viagem.csv'))
+viagens <- read.csv2("2024_Viagem.csv", dec =",", fileEncoding='latin1')
+file.remove(c('dataset.zip', '2024_Pagamento.csv', '2024_Passagem.csv', '2024_Trecho.csv', '2024_Viagem.csv'))
 
 viagens_IFS <- viagens %>%
   filter(Código.órgão.solicitante == "26423",
