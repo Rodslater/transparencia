@@ -4,7 +4,7 @@ library(downloader)
 library(lubridate)
 library(data.table)
 library(jsonlite)
-library(httr)
+library(httr)  # Adiciona httr para webhook
 
 # Função para baixar e processar dados de orçamento de um ano específico
 baixar_processar_orcamento_ano <- function(ano) {
@@ -29,7 +29,8 @@ baixar_processar_orcamento_ano <- function(ano) {
     IFS_orcamento_ano <- orcamento %>%
       filter(`CÓDIGO ÓRGÃO SUBORDINADO` == 26423) %>%   # é inteiro, não string
       select(
-        ano = `EXERCÍCIO`,
+        exercicio = `EXERCÍCIO`,
+        orgao = `NOME ÓRGÃO SUBORDINADO`,
         funcao = `NOME FUNÇÃO`,
         subfuncao = `NOME SUBFUNÇÃO`,
         programa = `NOME PROGRAMA ORÇAMENTÁRIO`,
@@ -41,8 +42,9 @@ baixar_processar_orcamento_ano <- function(ano) {
         orc_atualizado = `ORÇAMENTO ATUALIZADO (R$)`,
         orc_empenhado = `ORÇAMENTO EMPENHADO (R$)`,
         orc_realizado = `ORÇAMENTO REALIZADO (R$)`
-      ) %>%
-      relocate(ano, .before = orgao)  # Move a coluna ano para o início
+      ) %>% 
+      mutate(ano = ano) %>%  # Adiciona coluna do ano
+      relocate(ano, .before = exercicio)  # Move a coluna ano para o início
     
     # Limpeza dos arquivos temporários
     arquivos_para_remover <- c(zip_file, csv_file)
@@ -88,8 +90,8 @@ if(length(lista_dataframes_orcamento) > 0) {
     count(ano, sort = TRUE)
   print(resumo_por_ano)
   
-  # Resumo de valores por ano
-  cat("\nResumo financeiro por ano:\n")
+  # Resumo financeiro por ano
+  cat("\nResumo financeiro por ano (valores em R$):\n")
   resumo_financeiro <- IFS_orcamento_completo %>%
     group_by(ano) %>%
     summarise(
@@ -98,7 +100,8 @@ if(length(lista_dataframes_orcamento) > 0) {
       total_empenhado = sum(orc_empenhado, na.rm = TRUE),
       total_realizado = sum(orc_realizado, na.rm = TRUE),
       .groups = 'drop'
-    )
+    ) %>%
+    mutate(across(starts_with("total_"), ~ format(.x, big.mark = ".", decimal.mark = ",", scientific = FALSE)))
   print(resumo_financeiro)
   
   # Visualização das primeiras linhas
@@ -111,13 +114,24 @@ if(length(lista_dataframes_orcamento) > 0) {
   # WEBHOOK - Enviar notificação para n8n
   webhook_url <- "https://n8n.rodslater.com/webhook/ifs_orcamento"
   
+  # Recalcular resumo financeiro para o payload (sem formatação)
+  resumo_financeiro_raw <- IFS_orcamento_completo %>%
+    group_by(ano) %>%
+    summarise(
+      total_inicial = sum(orc_inicial, na.rm = TRUE),
+      total_atualizado = sum(orc_atualizado, na.rm = TRUE),
+      total_empenhado = sum(orc_empenhado, na.rm = TRUE),
+      total_realizado = sum(orc_realizado, na.rm = TRUE),
+      .groups = 'drop'
+    )
+  
   payload <- list(
     status = "success",
     timestamp = format(Sys.time(), "%Y-%m-%d %H:%M:%S"),
     message = "Dados de orçamento IFS atualizados com sucesso",
     total_registros = nrow(IFS_orcamento_completo),
     anos_processados = unique(IFS_orcamento_completo$ano),
-    resumo_financeiro = resumo_financeiro,
+    resumo_financeiro = resumo_financeiro_raw,
     registros_por_ano = resumo_por_ano,
     arquivo_atualizado = "IFS_orcamento.json"
   )
