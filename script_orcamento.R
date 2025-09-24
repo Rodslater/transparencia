@@ -4,7 +4,7 @@ library(downloader)
 library(lubridate)
 library(data.table)
 library(jsonlite)
-library(httr)  # Adiciona httr para webhook
+library(httr)
 
 # Função para baixar e processar dados de orçamento de um ano específico
 baixar_processar_orcamento_ano <- function(ano) {
@@ -29,7 +29,7 @@ baixar_processar_orcamento_ano <- function(ano) {
     IFS_orcamento_ano <- orcamento %>%
       filter(`CÓDIGO ÓRGÃO SUBORDINADO` == 26423) %>%   # é inteiro, não string
       select(
-        exercicio = `EXERCÍCIO`,
+        ano = `EXERCÍCIO`,
         orgao = `NOME ÓRGÃO SUBORDINADO`,
         funcao = `NOME FUNÇÃO`,
         subfuncao = `NOME SUBFUNÇÃO`,
@@ -80,18 +80,18 @@ if(length(lista_dataframes_orcamento) > 0) {
   
   cat("\n=== RESUMO FINAL ===\n")
   cat("Total de registros orçamentários IFS encontrados:", nrow(IFS_orcamento_completo), "\n")
-  cat("Anos processados:", paste(unique(IFS_orcamento_completo$exercicio), collapse = ", "), "\n")
+  cat("Anos processados:", paste(unique(IFS_orcamento_completo$ano), collapse = ", "), "\n")
   
   # Resumo por ano
   cat("\nRegistros por ano:\n")
   resumo_por_ano <- IFS_orcamento_completo %>% 
-    count(exercicio, sort = TRUE)
+    count(ano, sort = TRUE)
   print(resumo_por_ano)
   
   # Resumo financeiro por ano
   cat("\nResumo financeiro por ano (valores em R$):\n")
   resumo_financeiro <- IFS_orcamento_completo %>%
-    group_by(exercicio) %>%
+    group_by(ano) %>%
     summarise(
       total_inicial = sum(orc_inicial, na.rm = TRUE),
       total_atualizado = sum(orc_atualizado, na.rm = TRUE),
@@ -114,7 +114,7 @@ if(length(lista_dataframes_orcamento) > 0) {
   
   # Recalcular resumo financeiro para o payload (sem formatação)
   resumo_financeiro_raw <- IFS_orcamento_completo %>%
-    group_by(exercicio) %>%
+    group_by(ano) %>%
     summarise(
       total_inicial = sum(orc_inicial, na.rm = TRUE),
       total_atualizado = sum(orc_atualizado, na.rm = TRUE),
@@ -128,7 +128,7 @@ if(length(lista_dataframes_orcamento) > 0) {
     timestamp = format(Sys.time(), "%Y-%m-%d %H:%M:%S"),
     message = "Dados de orçamento IFS atualizados com sucesso",
     total_registros = nrow(IFS_orcamento_completo),
-    anos_processados = unique(IFS_orcamento_completo$exercicio),
+    anos_processados = unique(IFS_orcamento_completo$ano),
     resumo_financeiro = resumo_financeiro_raw,
     registros_por_ano = resumo_por_ano,
     arquivo_atualizado = "IFS_orcamento.json"
