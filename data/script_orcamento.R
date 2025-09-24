@@ -30,7 +30,6 @@ baixar_processar_orcamento_ano <- function(ano) {
       filter(`CÓDIGO ÓRGÃO SUBORDINADO` == 26423) %>%   # é inteiro, não string
       select(
         ano = `EXERCÍCIO`,
-        orgao = `NOME ÓRGÃO SUBORDINADO`,
         funcao = `NOME FUNÇÃO`,
         subfuncao = `NOME SUBFUNÇÃO`,
         programa = `NOME PROGRAMA ORÇAMENTÁRIO`,
