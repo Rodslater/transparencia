@@ -4,7 +4,7 @@ library(downloader)
 library(lubridate)
 library(data.table)
 library(jsonlite)
-library(httr)  # Adiciona httr para webhook
+library(httr)
 
 # Função para baixar e processar dados de um ano específico
 baixar_processar_ano <- function(ano) {
