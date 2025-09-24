@@ -30,6 +30,7 @@ jobs:
       - name: Execute Script
         run: |
           Rscript "script_orcamento.R" || true
+          Rscript "script_viagens.R" || true
           
       - name: Commit results
         run: |
