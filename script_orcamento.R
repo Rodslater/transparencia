@@ -4,7 +4,7 @@ library(downloader)
 library(lubridate)
 library(data.table)
 library(jsonlite)
-library(httr)  # Adiciona httr para webhook
+library(httr)
 
 # Função para baixar e processar dados de orçamento de um ano específico
 baixar_processar_orcamento_ano <- function(ano) {
@@ -27,10 +27,9 @@ baixar_processar_orcamento_ano <- function(ano) {
     
     # Processamento dos dados do IFS
     IFS_orcamento_ano <- orcamento %>%
-      filter(`CÓDIGO ÓRGÃO SUBORDINADO` == 26423) %>%   # é inteiro, não string
+      filter(`CÓDIGO ÓRGÃO SUBORDINADO` == 26423) %>%
       select(
         exercicio = `EXERCÍCIO`,
-        orgao = `NOME ÓRGÃO SUBORDINADO`,
         funcao = `NOME FUNÇÃO`,
         subfuncao = `NOME SUBFUNÇÃO`,
         programa = `NOME PROGRAMA ORÇAMENTÁRIO`,
