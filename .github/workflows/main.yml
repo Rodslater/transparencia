@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron:  "0 18 * * *"
+    - cron:  "0 */18 * * *"
   workflow_dispatch:
 
 name: 01-rscript
@@ -19,14 +19,19 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: |
-            any::tidyverse
-            any::downloader
+            any::dplyr
             any::lubridate
-            any::rio
+            any::purrr
+            any::downloader
+            any::data.table
+            any::jsonlite
+            any::httr
             
       - name: Execute Script
         run: |
-          Rscript "data/script.R"
+          Rscript "data/script.R" || true
+          Rscript "data/script_orcamento.R" || true
+          
       - name: Commit results
         run: |
           git config --local user.email "actions@github.com"
