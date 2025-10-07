@@ -3703,6 +3703,20 @@
     "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
+    "elemento_despesa": "Sentenças Judiciais",
+    "orc_inicial": 192934.14,
+    "orc_atualizado": 192934.14,
+    "orc_empenhado": 192934.14,
+    "orc_realizado": 176674.91
+  },
+  {
+    "ano": 2024,
+    "funcao": "Previdência social",
+    "subfuncao": "Previdência do regime estatutário",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Pensões",
     "orc_inicial": 13000577.27,
     "orc_atualizado": 13000577.27,
@@ -3722,20 +3736,6 @@
     "orc_atualizado": 673.35,
     "orc_empenhado": 0,
     "orc_realizado": 0
-  },
-  {
-    "ano": 2024,
-    "funcao": "Previdência social",
-    "subfuncao": "Previdência do regime estatutário",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Sentenças Judiciais",
-    "orc_inicial": 192934.14,
-    "orc_atualizado": 192934.14,
-    "orc_empenhado": 192934.14,
-    "orc_realizado": 176674.91
   },
   {
     "ano": 2024,
