@@ -1,6 +1,3 @@
-# Script para download e processamento de dados do IFS Sergipe
-# Fonte: Portal de Dados Abertos do Governo Federal
-
 library(dplyr)
 library(readr)
 library(tidyr)
