@@ -139,9 +139,34 @@ if (length(lista_dfs) > 0) {
   
   cat("  -> Espaços em branco extras removidos\n\n")
   
+  # CRÍTICO: Garantir que todos os registros tenham as mesmas colunas
+  # Define todas as colunas esperadas
+  colunas_esperadas <- c(
+    "nome", "cargo_funcao", "tipo_exercicio", "orgao_entidade",
+    "tipo_registro", "id_registro", "data_inicio", "data_termino",
+    "hora_inicio", "hora_termino", "origem", "destino",
+    "forma_realizacao", "data_publicacao", "ultima_modificacao",
+    "assunto_compromisso", "local", "participantes", "vinculacoes",
+    "objetivos", "detalhamento_audiencia", "detalhes"
+  )
+  
+  # Adiciona colunas faltantes com NA
+  for (col in colunas_esperadas) {
+    if (!col %in% colnames(resultado_final)) {
+      resultado_final[[col]] <- NA_character_
+      cat(sprintf("  -> Coluna '%s' adicionada com valores NA\n", col))
+    }
+  }
+  
+  # Reordena para ter sempre a mesma ordem
+  resultado_final <- resultado_final %>%
+    select(all_of(colunas_esperadas))
+  
+  cat("  -> Todas as colunas padronizadas e ordenadas\n\n")
+  
   # 7. Salvar JSON
   arquivo_json <- "IFS_agenda.json"
-  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE)
+  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE, na = "null")
   cat(sprintf("Resultados salvos em: %s\n\n", arquivo_json))
   
   # Exibir amostra
