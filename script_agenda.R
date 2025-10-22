@@ -143,7 +143,16 @@ if (length(lista_dfs) > 0) {
   resultado_final <- resultado_final %>%
     mutate(across(where(is.character), str_trim))
   
-  cat("  -> Espaços em branco extras removidos\n\n")
+  cat("  -> Espaços em branco extras removidos\n")
+  
+  # Limpar coluna participantes (remover prefixo padrão)
+  if ("participantes" %in% colnames(resultado_final)) {
+    resultado_final <- resultado_final %>%
+      mutate(participantes = str_remove(participantes, "^Agentes públicos obrigados participantes:\\s*"))
+    cat("  -> Prefixo removido da coluna 'participantes'\n")
+  }
+  
+  cat("\n")
   
   # CRÍTICO: Garantir que todos os registros tenham as mesmas colunas
   # Define todas as colunas esperadas
