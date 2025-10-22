@@ -22,6 +22,7 @@ jobs:
             any::dplyr
             any::readr
             any::lubridate
+            any::tidyr
             any::stringr
             any::purrr
             any::downloader
