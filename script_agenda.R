@@ -119,13 +119,6 @@ if (length(lista_dfs) > 0) {
   cat("  -> Valores 'ND' e vazios convertidos para NULL\n")
   cat("  -> Colunas convertidas para snake_case\n")
   
-  resultado_final <- resultado_final %>%
-    mutate(participantes = str_replace(participantes, 
-                                       "^Agentes públicos obrigados participantes: ", 
-                                       ""))
-  
-  cat("  -> Prefixo 'Agentes públicos obrigados participantes: ' removido de 'participantes'\n")
-  
   # Converter datas para formato ISO (YYYY-MM-DD)
   colunas_data <- c("data_inicio", "data_termino", "data_publicacao", "ultima_modificacao")
   
@@ -145,9 +138,18 @@ if (length(lista_dfs) > 0) {
   resultado_final <- resultado_final %>%
     mutate(across(where(is.character), str_trim))
   
-  cat("  -> Espaços em branco extras removidos\n\n")
+  cat("  -> Espaços em branco extras removidos\n")
   
-  # CRÍTICO: Garantir que todos os registros tenham as mesmas colunas
+  # 6.1 Limpeza da coluna 'participantes' (Adição da correção anterior)
+  cat("  -> Limpando prefixo da coluna 'participantes'\n")
+  prefixo_a_remover <- "Agentes públicos obrigados participantes: "
+  
+  resultado_final <- resultado_final %>%
+    mutate(
+      participantes = str_replace(participantes, fixed(prefixo_a_remover), "")
+    )
+  
+  # 6.2 CRÍTICO: Garantir que todos os registros tenham as mesmas colunas
   # Define todas as colunas esperadas
   colunas_esperadas <- c(
     "nome", "cargo_funcao", "tipo_exercicio", "orgao_entidade",
@@ -172,13 +174,23 @@ if (length(lista_dfs) > 0) {
   
   cat("  -> Todas as colunas padronizadas e ordenadas\n")
   
-  # Converter TODOS os NAs para strings vazias (compatibilidade Supabase)
+  # 7. CORREÇÃO PARA SUPABASE TIME FIELD (Substitui a conversão de NA para "")
+  # Colunas que DEVEM permanecer como NA/NULL para o banco de dados (tipos TIME)
+  colunas_na_null <- c("hora_inicio", "hora_termino")
+  
+  cat("\n--- CONVERSÃO FINAL DE NULL ---\n")
+  
   resultado_final <- resultado_final %>%
-    mutate(across(everything(), ~replace_na(., "")))
+    mutate(across(
+      # Aplica a conversão apenas nas colunas que NÃO são de hora
+      -all_of(colunas_na_null), 
+      ~replace_na(., "") # Converte NAs em strings vazias para colunas de texto (compatibilidade Supabase)
+    ))
   
-  cat("  -> NAs convertidos para strings vazias\n\n")
+  cat("  -> NAs convertidos para strings vazias EXCETO nas colunas de hora (TIME)\n")
+  cat("  -> Colunas de hora mantêm NA, que se traduz em NULL no Supabase, evitando o erro de TIME\n\n")
   
-  # 7. Salvar JSON
+  # 8. Salvar JSON
   arquivo_json <- "IFS_agenda.json"
   write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE)
   cat(sprintf("Resultados salvos em: %s\n\n", arquivo_json))
@@ -191,9 +203,10 @@ if (length(lista_dfs) > 0) {
     cat(sprintf("\n... e mais %d registros.\n", nrow(resultado_final) - 10))
   }
   
-  # 8. WEBHOOK - Enviar notificação para n8n
+  # 9. WEBHOOK - Enviar notificação para n8n
   cat("\n=== ATIVANDO WEBHOOK ===\n")
-  webhook_url <- "https://n8n.rodslater.com/webhook/ifs_agenda"
+  # Use a URL real do seu webhook
+  webhook_url <- "https://n8n.rodslater.com/webhook/ifs_agenda" 
   
   # Resumo por tipo de registro
   resumo_tipo <- resultado_final %>% 
@@ -278,7 +291,7 @@ if (length(lista_dfs) > 0) {
   })
 }
 
-# 9. Limpar arquivos temporários
+# 10. Limpar arquivos temporários
 cat("\nLimpando arquivos temporários...\n")
 unlink(arquivo_zip)
 unlink(dir_extracao, recursive = TRUE)
