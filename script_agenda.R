@@ -162,11 +162,17 @@ if (length(lista_dfs) > 0) {
   resultado_final <- resultado_final %>%
     select(all_of(colunas_esperadas))
   
-  cat("  -> Todas as colunas padronizadas e ordenadas\n\n")
+  cat("  -> Todas as colunas padronizadas e ordenadas\n")
+  
+  # Converter TODOS os NAs para strings vazias (compatibilidade Supabase)
+  resultado_final <- resultado_final %>%
+    mutate(across(everything(), ~replace_na(., "")))
+  
+  cat("  -> NAs convertidos para strings vazias\n\n")
   
   # 7. Salvar JSON
   arquivo_json <- "IFS_agenda.json"
-  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE, na = "null")
+  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE)
   cat(sprintf("Resultados salvos em: %s\n\n", arquivo_json))
   
   # Exibir amostra
