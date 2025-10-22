@@ -1,3 +1,6 @@
+# Script para download e processamento de dados do IFS Sergipe
+# Fonte: Portal de Dados Abertos do Governo Federal
+
 library(dplyr)
 library(readr)
 library(tidyr)
@@ -180,14 +183,29 @@ if (length(lista_dfs) > 0) {
   cat("  -> Todas as colunas padronizadas e ordenadas\n")
   
   # Converter TODOS os NAs para strings vazias (compatibilidade Supabase)
+  # EXCETO para colunas de data que precisam ser null
+  colunas_data <- c("data_inicio", "data_termino", "data_publicacao", "ultima_modificacao")
+  
   resultado_final <- resultado_final %>%
-    mutate(across(everything(), ~replace_na(., "")))
+    mutate(across(
+      -all_of(colunas_data),
+      ~replace_na(., "")
+    ))
   
-  cat("  -> NAs convertidos para strings vazias\n\n")
+  cat("  -> NAs convertidos para strings vazias (exceto datas)\n")
   
-  # 7. Salvar JSON
+  # Para colunas de data: converter strings vazias para NA (que vira null no JSON)
+  resultado_final <- resultado_final %>%
+    mutate(across(
+      all_of(colunas_data),
+      ~if_else(. == "" | is.na(.), NA_character_, .)
+    ))
+  
+  cat("  -> Strings vazias em datas convertidas para null\n\n")
+  
+  # 7. Salvar JSON (na = "null" para campos de data)
   arquivo_json <- "IFS_agenda.json"
-  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE)
+  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE, na = "null")
   cat(sprintf("Resultados salvos em: %s\n\n", arquivo_json))
   
   # Exibir amostra
