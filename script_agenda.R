@@ -1,3 +1,6 @@
+# Script para download e processamento de dados do IFS Sergipe
+# Fonte: Portal de Dados Abertos do Governo Federal
+
 library(dplyr)
 library(readr)
 library(tidyr)
@@ -125,8 +128,13 @@ if (length(lista_dfs) > 0) {
   for (col in colunas_data) {
     if (col %in% colnames(resultado_final)) {
       tryCatch({
+        # Apenas converte datas não-NA
         resultado_final <- resultado_final %>%
-          mutate(!!col := format(dmy(!!sym(col)), "%Y-%m-%d"))
+          mutate(!!col := if_else(
+            is.na(!!sym(col)) | !!sym(col) == "",
+            NA_character_,
+            format(dmy(!!sym(col)), "%Y-%m-%d")
+          ))
         cat(sprintf("  -> Coluna '%s' convertida para ISO (YYYY-MM-DD)\n", col))
       }, error = function(e) {
         cat(sprintf("  -> Aviso: Não foi possível converter '%s'\n", col))
@@ -138,18 +146,9 @@ if (length(lista_dfs) > 0) {
   resultado_final <- resultado_final %>%
     mutate(across(where(is.character), str_trim))
   
-  cat("  -> Espaços em branco extras removidos\n")
+  cat("  -> Espaços em branco extras removidos\n\n")
   
-  # 6.1 Limpeza da coluna 'participantes' (Adição da correção anterior)
-  cat("  -> Limpando prefixo da coluna 'participantes'\n")
-  prefixo_a_remover <- "Agentes públicos obrigados participantes: "
-  
-  resultado_final <- resultado_final %>%
-    mutate(
-      participantes = str_replace(participantes, fixed(prefixo_a_remover), "")
-    )
-  
-  # 6.2 CRÍTICO: Garantir que todos os registros tenham as mesmas colunas
+  # CRÍTICO: Garantir que todos os registros tenham as mesmas colunas
   # Define todas as colunas esperadas
   colunas_esperadas <- c(
     "nome", "cargo_funcao", "tipo_exercicio", "orgao_entidade",
@@ -174,23 +173,21 @@ if (length(lista_dfs) > 0) {
   
   cat("  -> Todas as colunas padronizadas e ordenadas\n")
   
-  # 7. CORREÇÃO PARA SUPABASE TIME FIELD (Substitui a conversão de NA para "")
-  # Colunas que DEVEM permanecer como NA/NULL para o banco de dados (tipos TIME)
-  colunas_na_null <- c("hora_inicio", "hora_termino")
-  
-  cat("\n--- CONVERSÃO FINAL DE NULL ---\n")
-  
+  # Converter TODOS os NAs para strings vazias (compatibilidade Supabase)
   resultado_final <- resultado_final %>%
-    mutate(across(
-      # Aplica a conversão apenas nas colunas que NÃO são de hora
-      -all_of(colunas_na_null), 
-      ~replace_na(., "") # Converte NAs em strings vazias para colunas de texto (compatibilidade Supabase)
-    ))
+    mutate(across(everything(), ~replace_na(., "")))
   
-  cat("  -> NAs convertidos para strings vazias EXCETO nas colunas de hora (TIME)\n")
-  cat("  -> Colunas de hora mantêm NA, que se traduz em NULL no Supabase, evitando o erro de TIME\n\n")
+  cat("  -> NAs convertidos para strings vazias\n\n")
+
+  cat("  -> Limpando prefixo da coluna 'participantes'\n")
+prefixo_a_remover <- "Agentes públicos obrigados participantes: "
+
+resultado_final <- resultado_final %>%
+  mutate(
+    participantes = str_replace(participantes, fixed(prefixo_a_remover), "")
+  )
   
-  # 8. Salvar JSON
+  # 7. Salvar JSON
   arquivo_json <- "IFS_agenda.json"
   write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE)
   cat(sprintf("Resultados salvos em: %s\n\n", arquivo_json))
@@ -203,10 +200,9 @@ if (length(lista_dfs) > 0) {
     cat(sprintf("\n... e mais %d registros.\n", nrow(resultado_final) - 10))
   }
   
-  # 9. WEBHOOK - Enviar notificação para n8n
+  # 8. WEBHOOK - Enviar notificação para n8n
   cat("\n=== ATIVANDO WEBHOOK ===\n")
-  # Use a URL real do seu webhook
-  webhook_url <- "https://n8n.rodslater.com/webhook/ifs_agenda" 
+  webhook_url <- "https://n8n.rodslater.com/webhook/ifs_agenda"
   
   # Resumo por tipo de registro
   resumo_tipo <- resultado_final %>% 
@@ -291,7 +287,7 @@ if (length(lista_dfs) > 0) {
   })
 }
 
-# 10. Limpar arquivos temporários
+# 9. Limpar arquivos temporários
 cat("\nLimpando arquivos temporários...\n")
 unlink(arquivo_zip)
 unlink(dir_extracao, recursive = TRUE)
