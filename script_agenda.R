@@ -119,19 +119,21 @@ if (length(lista_dfs) > 0) {
   cat("  -> Valores 'ND' e vazios convertidos para NULL\n")
   cat("  -> Colunas convertidas para snake_case\n")
   
+  resultado_final <- resultado_final %>%
+    mutate(participantes = str_replace(participantes, 
+                                       "^Agentes públicos obrigados participantes: ", 
+                                       ""))
+  
+  cat("  -> Prefixo 'Agentes públicos obrigados participantes: ' removido de 'participantes'\n")
+  
   # Converter datas para formato ISO (YYYY-MM-DD)
   colunas_data <- c("data_inicio", "data_termino", "data_publicacao", "ultima_modificacao")
   
   for (col in colunas_data) {
     if (col %in% colnames(resultado_final)) {
       tryCatch({
-        # Apenas converte datas não-NA
         resultado_final <- resultado_final %>%
-          mutate(!!col := if_else(
-            is.na(!!sym(col)) | !!sym(col) == "",
-            NA_character_,
-            format(dmy(!!sym(col)), "%Y-%m-%d")
-          ))
+          mutate(!!col := format(dmy(!!sym(col)), "%Y-%m-%d"))
         cat(sprintf("  -> Coluna '%s' convertida para ISO (YYYY-MM-DD)\n", col))
       }, error = function(e) {
         cat(sprintf("  -> Aviso: Não foi possível converter '%s'\n", col))
@@ -143,16 +145,7 @@ if (length(lista_dfs) > 0) {
   resultado_final <- resultado_final %>%
     mutate(across(where(is.character), str_trim))
   
-  cat("  -> Espaços em branco extras removidos\n")
-  
-  # Limpar coluna participantes (remover prefixo padrão)
-  if ("participantes" %in% colnames(resultado_final)) {
-    resultado_final <- resultado_final %>%
-      mutate(participantes = str_remove(participantes, "^Agentes públicos obrigados participantes:\\s*"))
-    cat("  -> Prefixo removido da coluna 'participantes'\n")
-  }
-  
-  cat("\n")
+  cat("  -> Espaços em branco extras removidos\n\n")
   
   # CRÍTICO: Garantir que todos os registros tenham as mesmas colunas
   # Define todas as colunas esperadas
@@ -180,29 +173,14 @@ if (length(lista_dfs) > 0) {
   cat("  -> Todas as colunas padronizadas e ordenadas\n")
   
   # Converter TODOS os NAs para strings vazias (compatibilidade Supabase)
-  # EXCETO para colunas de data que precisam ser null
-  colunas_data <- c("data_inicio", "data_termino", "data_publicacao", "ultima_modificacao")
-  
   resultado_final <- resultado_final %>%
-    mutate(across(
-      -all_of(colunas_data),
-      ~replace_na(., "")
-    ))
+    mutate(across(everything(), ~replace_na(., "")))
   
-  cat("  -> NAs convertidos para strings vazias (exceto datas)\n")
+  cat("  -> NAs convertidos para strings vazias\n\n")
   
-  # Para colunas de data: converter strings vazias para NA (que vira null no JSON)
-  resultado_final <- resultado_final %>%
-    mutate(across(
-      all_of(colunas_data),
-      ~if_else(. == "" | is.na(.), NA_character_, .)
-    ))
-  
-  cat("  -> Strings vazias em datas convertidas para null\n\n")
-  
-  # 7. Salvar JSON (na = "null" para campos de data)
+  # 7. Salvar JSON
   arquivo_json <- "IFS_agenda.json"
-  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE, na = "null")
+  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE)
   cat(sprintf("Resultados salvos em: %s\n\n", arquivo_json))
   
   # Exibir amostra
