@@ -20,7 +20,9 @@ jobs:
         with:
           packages: |
             any::dplyr
+            any::readr
             any::lubridate
+            any::stringr
             any::purrr
             any::downloader
             any::data.table
@@ -31,6 +33,7 @@ jobs:
         run: |
           Rscript "script_orcamento.R" || true
           Rscript "script_viagens.R" || true
+          Rscript "script_agenda.R" || true
           
       - name: Commit results
         run: |
