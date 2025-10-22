@@ -1,5 +1,6 @@
 library(dplyr)
 library(readr)
+library(tidyr)
 library(lubridate)
 library(stringr)
 library(jsonlite)
@@ -124,8 +125,13 @@ if (length(lista_dfs) > 0) {
   for (col in colunas_data) {
     if (col %in% colnames(resultado_final)) {
       tryCatch({
+        # Apenas converte datas não-NA
         resultado_final <- resultado_final %>%
-          mutate(!!col := format(dmy(!!sym(col)), "%Y-%m-%d"))
+          mutate(!!col := if_else(
+            is.na(!!sym(col)) | !!sym(col) == "",
+            NA_character_,
+            format(dmy(!!sym(col)), "%Y-%m-%d")
+          ))
         cat(sprintf("  -> Coluna '%s' convertida para ISO (YYYY-MM-DD)\n", col))
       }, error = function(e) {
         cat(sprintf("  -> Aviso: Não foi possível converter '%s'\n", col))
