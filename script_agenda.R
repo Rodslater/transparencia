@@ -143,7 +143,16 @@ if (length(lista_dfs) > 0) {
   resultado_final <- resultado_final %>%
     mutate(across(where(is.character), str_trim))
   
-  cat("  -> Espaços em branco extras removidos\n\n")
+  cat("  -> Espaços em branco extras removidos\n")
+  
+  # Limpar coluna participantes (remover prefixo padrão)
+  if ("participantes" %in% colnames(resultado_final)) {
+    resultado_final <- resultado_final %>%
+      mutate(participantes = str_remove(participantes, "^Agentes públicos obrigados participantes:\\s*"))
+    cat("  -> Prefixo removido da coluna 'participantes'\n")
+  }
+  
+  cat("\n")
   
   # CRÍTICO: Garantir que todos os registros tenham as mesmas colunas
   # Define todas as colunas esperadas
@@ -170,25 +179,16 @@ if (length(lista_dfs) > 0) {
   
   cat("  -> Todas as colunas padronizadas e ordenadas\n")
   
-  # Converter TODOS os NAs para strings vazias (compatibilidade Supabase)
+  # Converter strings vazias para NA em TODAS as colunas
+  # O write_json vai converter NA para null no JSON
   resultado_final <- resultado_final %>%
-    mutate(across(everything(), ~replace_na(., "")))
+    mutate(across(everything(), ~if_else(. == "" | is.na(.), NA_character_, .)))
   
-  cat("  -> NAs convertidos para strings vazias\n\n")
-
-  # Limpar prefixo na coluna 'participantes'
-  prefixo_a_remover <- "Agentes públicos obrigados participantes: "
-
-resultado_final <- resultado_final %>%
-  mutate(
-    participantes = str_replace(participantes, fixed(prefixo_a_remover), "")
-  )
-
-  cat("  -> Prefixo da coluna 'participantes' removido\n")
+  cat("  -> Strings vazias e NAs padronizados para null\n\n")
   
-  # 7. Salvar JSON
+  # 7. Salvar JSON (na = "null" converte NA para null no JSON)
   arquivo_json <- "IFS_agenda.json"
-  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE)
+  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE, na = "null")
   cat(sprintf("Resultados salvos em: %s\n\n", arquivo_json))
   
   # Exibir amostra
