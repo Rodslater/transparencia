@@ -179,16 +179,19 @@ if (length(lista_dfs) > 0) {
   
   cat("  -> Todas as colunas padronizadas e ordenadas\n")
   
-  # Converter strings vazias para NA em TODAS as colunas
-  # O write_json vai converter NA para null no JSON
+  # Converter strings vazias para NA
   resultado_final <- resultado_final %>%
-    mutate(across(everything(), ~if_else(. == "" | is.na(.), NA_character_, .)))
+    mutate(across(everything(), ~if_else(. == "", NA_character_, .)))
   
-  cat("  -> Strings vazias e NAs padronizados para null\n\n")
+  cat("  -> Strings vazias convertidas para NA\n\n")
   
-  # 7. Salvar JSON (na = "null" converte NA para null no JSON)
+  # 7. Salvar JSON
   arquivo_json <- "IFS_agenda.json"
-  write_json(resultado_final, arquivo_json, pretty = TRUE, auto_unbox = TRUE, na = "null")
+  
+  # Converter para lista e então para JSON (garante null correto)
+  json_content <- toJSON(resultado_final, pretty = TRUE, auto_unbox = TRUE, null = "null", na = "null")
+  write(json_content, file = arquivo_json)
+  
   cat(sprintf("Resultados salvos em: %s\n\n", arquivo_json))
   
   # Exibir amostra
