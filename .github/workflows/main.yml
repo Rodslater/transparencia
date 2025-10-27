@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron:  "45 1 * * *"
+    - cron:  "45 4 * * 1-5"
   workflow_dispatch:
 
 name: 01-rscript
