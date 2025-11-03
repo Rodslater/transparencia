@@ -763,20 +763,6 @@
     "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": 12073726,
-    "orc_atualizado": 0,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
-  },
-  {
-    "ano": 2021,
-    "funcao": "Previdência social",
-    "subfuncao": "Previdência do regime estatutário",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Despesas de Exercícios Anteriores",
     "orc_inicial": 395706.84,
     "orc_atualizado": 395706.84,
@@ -792,8 +778,8 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Não informado",
-    "orc_inicial": -15715825.81,
-    "orc_atualizado": 98901.19,
+    "orc_inicial": 12073726,
+    "orc_atualizado": 0,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -824,6 +810,20 @@
     "orc_atualizado": 4920587.48,
     "orc_empenhado": 4920527.48,
     "orc_realizado": 4324566.52
+  },
+  {
+    "ano": 2021,
+    "funcao": "Previdência social",
+    "subfuncao": "Previdência do regime estatutário",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Pessoal e Encargos Sociais",
+    "elemento_despesa": "Não informado",
+    "orc_inicial": -15715825.81,
+    "orc_atualizado": 98901.19,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
   },
   {
     "ano": 2021,
@@ -1010,20 +1010,6 @@
   {
     "ano": 2022,
     "funcao": "Educação",
-    "subfuncao": "Formação de recursos humanos",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "CAPACITACAO DE SERVIDORES PUBLICOS FEDERAIS EM PROCESSO DE QUALIFICACAO E REQUALIFICACAO",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": 190460.05,
-    "orc_atualizado": 460.05,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
-  },
-  {
-    "ano": 2022,
-    "funcao": "Educação",
     "subfuncao": "Atenção básica",
     "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
     "acao": "BENEFICIOS OBRIGATORIOS AOS SERVIDORES CIVIS, EMPREGADOS, MILITARES E SEUS DEPENDENTES",
@@ -1046,6 +1032,20 @@
     "elemento_despesa": "Não informado",
     "orc_inicial": -108064.25,
     "orc_atualizado": 1.75,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
+  },
+  {
+    "ano": 2022,
+    "funcao": "Educação",
+    "subfuncao": "Formação de recursos humanos",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "CAPACITACAO DE SERVIDORES PUBLICOS FEDERAIS EM PROCESSO DE QUALIFICACAO E REQUALIFICACAO",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Não informado",
+    "orc_inicial": 190460.05,
+    "orc_atualizado": 460.05,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -1110,20 +1110,6 @@
     "funcao": "Educação",
     "subfuncao": "Atenção básica",
     "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "ASSISTENCIA MEDICA E ODONTOLOGICA AOS SERVIDORES CIVIS, EMPREGADOS, MILITARES E SEUS DEPENDENTES",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": 93257.11,
-    "orc_atualizado": 254264.11,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
-  },
-  {
-    "ano": 2022,
-    "funcao": "Educação",
-    "subfuncao": "Atenção básica",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
     "acao": "BENEFICIOS OBRIGATORIOS AOS SERVIDORES CIVIS, EMPREGADOS, MILITARES E SEUS DEPENDENTES",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
@@ -1146,6 +1132,20 @@
     "orc_atualizado": 4416.95,
     "orc_empenhado": 4416.95,
     "orc_realizado": 4416.95
+  },
+  {
+    "ano": 2022,
+    "funcao": "Educação",
+    "subfuncao": "Atenção básica",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "ASSISTENCIA MEDICA E ODONTOLOGICA AOS SERVIDORES CIVIS, EMPREGADOS, MILITARES E SEUS DEPENDENTES",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Indenizações e Restituições",
+    "orc_inicial": 2584746.26,
+    "orc_atualizado": 2584746.26,
+    "orc_empenhado": 2584746.26,
+    "orc_realizado": 2360437.47
   },
   {
     "ano": 2022,
@@ -1197,11 +1197,11 @@
     "acao": "ASSISTENCIA MEDICA E ODONTOLOGICA AOS SERVIDORES CIVIS, EMPREGADOS, MILITARES E SEUS DEPENDENTES",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Indenizações e Restituições",
-    "orc_inicial": 2584746.26,
-    "orc_atualizado": 2584746.26,
-    "orc_empenhado": 2584746.26,
-    "orc_realizado": 2360437.47
+    "elemento_despesa": "Despesas de Exercícios Anteriores",
+    "orc_inicial": 47599.63,
+    "orc_atualizado": 47599.63,
+    "orc_empenhado": 47599.63,
+    "orc_realizado": 47599.63
   },
   {
     "ano": 2022,
@@ -1239,11 +1239,11 @@
     "acao": "ASSISTENCIA MEDICA E ODONTOLOGICA AOS SERVIDORES CIVIS, EMPREGADOS, MILITARES E SEUS DEPENDENTES",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Despesas de Exercícios Anteriores",
-    "orc_inicial": 47599.63,
-    "orc_atualizado": 47599.63,
-    "orc_empenhado": 47599.63,
-    "orc_realizado": 47599.63
+    "elemento_despesa": "Não informado",
+    "orc_inicial": 93257.11,
+    "orc_atualizado": 254264.11,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
   },
   {
     "ano": 2022,
@@ -1258,20 +1258,6 @@
     "orc_atualizado": 609341.76,
     "orc_empenhado": 606773.8,
     "orc_realizado": 167712.94
-  },
-  {
-    "ano": 2022,
-    "funcao": "Educação",
-    "subfuncao": "Outros encargos especiais",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "CONTRIBUICAO DA UNIAO, DE SUAS AUTARQUIAS E FUNDACOES PARA O CUSTEIO DO REGIME DE PREVIDENCIA DOS SERVIDORES PUBLICOS FEDERAIS",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": 3617211.82,
-    "orc_atualizado": 3617211.82,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
   },
   {
     "ano": 2022,
@@ -1304,6 +1290,20 @@
   {
     "ano": 2022,
     "funcao": "Educação",
+    "subfuncao": "Outros encargos especiais",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "CONTRIBUICAO DA UNIAO, DE SUAS AUTARQUIAS E FUNDACOES PARA O CUSTEIO DO REGIME DE PREVIDENCIA DOS SERVIDORES PUBLICOS FEDERAIS",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Pessoal e Encargos Sociais",
+    "elemento_despesa": "Não informado",
+    "orc_inicial": 3617211.82,
+    "orc_atualizado": 3617211.82,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
+  },
+  {
+    "ano": 2022,
+    "funcao": "Educação",
     "subfuncao": "Ensino profissional",
     "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA",
     "acao": "ASSISTENCIA AOS ESTUDANTES DAS INSTITUICOES FEDERAIS DE EDUCACAO PROFISSIONAL E TECNOLOGICA",
@@ -1314,20 +1314,6 @@
     "orc_atualizado": 3607715.23,
     "orc_empenhado": 3604896.51,
     "orc_realizado": 3056256.73
-  },
-  {
-    "ano": 2022,
-    "funcao": "Previdência social",
-    "subfuncao": "Previdência do regime estatutário",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Sentenças Judiciais",
-    "orc_inicial": 145454.58,
-    "orc_atualizado": 145454.58,
-    "orc_empenhado": 145454.58,
-    "orc_realizado": 133267.53
   },
   {
     "ano": 2022,
@@ -1351,11 +1337,11 @@
     "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Pensões",
-    "orc_inicial": 11442401.18,
-    "orc_atualizado": 11442401.18,
-    "orc_empenhado": 11442401.18,
-    "orc_realizado": 10544168.53
+    "elemento_despesa": "Aposentadorias, Reserva Remunerada e Reformas",
+    "orc_inicial": 42132350.87,
+    "orc_atualizado": 42132350.87,
+    "orc_empenhado": 42132350.87,
+    "orc_realizado": 38869047.99
   },
   {
     "ano": 2022,
@@ -1365,11 +1351,25 @@
     "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Aposentadorias, Reserva Remunerada e Reformas",
-    "orc_inicial": 42132350.87,
-    "orc_atualizado": 42132350.87,
-    "orc_empenhado": 42132350.87,
-    "orc_realizado": 38869047.99
+    "elemento_despesa": "Sentenças Judiciais",
+    "orc_inicial": 145454.58,
+    "orc_atualizado": 145454.58,
+    "orc_empenhado": 145454.58,
+    "orc_realizado": 133267.53
+  },
+  {
+    "ano": 2022,
+    "funcao": "Previdência social",
+    "subfuncao": "Previdência do regime estatutário",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Pessoal e Encargos Sociais",
+    "elemento_despesa": "Pensões",
+    "orc_inicial": 11442401.18,
+    "orc_atualizado": 11442401.18,
+    "orc_empenhado": 11442401.18,
+    "orc_realizado": 10544168.53
   },
   {
     "ano": 2022,
@@ -1533,11 +1533,11 @@
     "acao": "CONTRIBUICOES A ENTIDADES NACIONAIS SEM EXIGENCIA DE PROGRAMACAO ESPECIFICA",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": 623.82,
-    "orc_atualizado": 623.82,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
+    "elemento_despesa": "Contribuições",
+    "orc_inicial": 41376.18,
+    "orc_atualizado": 41376.18,
+    "orc_empenhado": 41376.18,
+    "orc_realizado": 41376.18
   },
   {
     "ano": 2022,
@@ -1547,23 +1547,9 @@
     "acao": "CONTRIBUICOES A ENTIDADES NACIONAIS SEM EXIGENCIA DE PROGRAMACAO ESPECIFICA",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Contribuições",
-    "orc_inicial": 41376.18,
-    "orc_atualizado": 41376.18,
-    "orc_empenhado": 41376.18,
-    "orc_realizado": 41376.18
-  },
-  {
-    "ano": 2022,
-    "funcao": "Educação",
-    "subfuncao": "Administração geral",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "AJUDA DE CUSTO PARA MORADIA OU AUXILIO-MORADIA A AGENTES PUBLICOS",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Não informado",
-    "orc_inicial": 15000,
-    "orc_atualizado": 15000,
+    "orc_inicial": 623.82,
+    "orc_atualizado": 623.82,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -1578,20 +1564,6 @@
     "elemento_despesa": "Não informado",
     "orc_inicial": 13637.17,
     "orc_atualizado": 2643.17,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
-  },
-  {
-    "ano": 2022,
-    "funcao": "Educação",
-    "subfuncao": "Ensino profissional",
-    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA",
-    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": 214530.94,
-    "orc_atualizado": 8493.94,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -1848,6 +1820,34 @@
     "orc_realizado": 257280
   },
   {
+    "ano": 2022,
+    "funcao": "Educação",
+    "subfuncao": "Ensino profissional",
+    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA",
+    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Não informado",
+    "orc_inicial": 214530.94,
+    "orc_atualizado": 8493.94,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
+  },
+  {
+    "ano": 2022,
+    "funcao": "Educação",
+    "subfuncao": "Administração geral",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "AJUDA DE CUSTO PARA MORADIA OU AUXILIO-MORADIA A AGENTES PUBLICOS",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Não informado",
+    "orc_inicial": 15000,
+    "orc_atualizado": 15000,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
+  },
+  {
     "ano": 2023,
     "funcao": "Educação",
     "subfuncao": "Ensino profissional",
@@ -2059,20 +2059,6 @@
   },
   {
     "ano": 2023,
-    "funcao": "Educação",
-    "subfuncao": "Proteção e benefícios ao trabalhador",
-    "programa": "Sem informação",
-    "acao": "ASSISTENCIA MEDICA E ODONTOLOGICA AOS SERVIDORES CIVIS, EMPREGADOS, MILITARES E SEUS DEPENDENTES",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Indenizações e Restituições",
-    "orc_inicial": 2532520.14,
-    "orc_atualizado": 2532520.14,
-    "orc_empenhado": 2531533.18,
-    "orc_realizado": 2320069.42
-  },
-  {
-    "ano": 2023,
     "funcao": "Previdência social",
     "subfuncao": "Previdência do regime estatutário",
     "programa": "Sem informação",
@@ -2084,6 +2070,20 @@
     "orc_atualizado": 0,
     "orc_empenhado": 0,
     "orc_realizado": 0
+  },
+  {
+    "ano": 2023,
+    "funcao": "Educação",
+    "subfuncao": "Proteção e benefícios ao trabalhador",
+    "programa": "Sem informação",
+    "acao": "ASSISTENCIA MEDICA E ODONTOLOGICA AOS SERVIDORES CIVIS, EMPREGADOS, MILITARES E SEUS DEPENDENTES",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Indenizações e Restituições",
+    "orc_inicial": 2532520.14,
+    "orc_atualizado": 2532520.14,
+    "orc_empenhado": 2531533.18,
+    "orc_realizado": 2320069.42
   },
   {
     "ano": 2023,
@@ -3197,11 +3197,11 @@
     "subfuncao": "Ensino profissional",
     "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
     "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS DE CAPITAL",
-    "grupo_despesa": "Investimentos",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Não informado",
-    "orc_inicial": -958616.45,
-    "orc_atualizado": 402.55,
+    "orc_inicial": -2762552.66,
+    "orc_atualizado": 206625.34,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -3211,11 +3211,11 @@
     "subfuncao": "Ensino profissional",
     "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
     "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
+    "cat_economica": "DESPESAS DE CAPITAL",
+    "grupo_despesa": "Investimentos",
     "elemento_despesa": "Não informado",
-    "orc_inicial": -2762552.66,
-    "orc_atualizado": 206625.34,
+    "orc_inicial": -958616.45,
+    "orc_atualizado": 402.55,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -3703,6 +3703,20 @@
     "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
+    "elemento_despesa": "Sentenças Judiciais",
+    "orc_inicial": 192934.14,
+    "orc_atualizado": 192934.14,
+    "orc_empenhado": 192934.14,
+    "orc_realizado": 176674.91
+  },
+  {
+    "ano": 2024,
+    "funcao": "Previdência social",
+    "subfuncao": "Previdência do regime estatutário",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Pensões",
     "orc_inicial": 13000577.27,
     "orc_atualizado": 13000577.27,
@@ -3731,11 +3745,11 @@
     "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Sentenças Judiciais",
-    "orc_inicial": 192934.14,
-    "orc_atualizado": 192934.14,
-    "orc_empenhado": 192934.14,
-    "orc_realizado": 176674.91
+    "elemento_despesa": "Não informado",
+    "orc_inicial": -2948754.2,
+    "orc_atualizado": 316414.8,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
   },
   {
     "ano": 2024,
@@ -3752,20 +3766,6 @@
     "orc_realizado": 44976174.8
   },
   {
-    "ano": 2024,
-    "funcao": "Previdência social",
-    "subfuncao": "Previdência do regime estatutário",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": -2948754.2,
-    "orc_atualizado": 316414.8,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
-  },
-  {
     "ano": 2025,
     "funcao": "Educação",
     "subfuncao": "Administração geral",
@@ -3774,8 +3774,8 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Não informado",
-    "orc_inicial": 17600,
-    "orc_atualizado": 17600,
+    "orc_inicial": 15200,
+    "orc_atualizado": 15200,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -3801,20 +3801,6 @@
     "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Sentenças Judiciais",
-    "orc_inicial": 180215.24,
-    "orc_atualizado": 180215.24,
-    "orc_empenhado": 180215.24,
-    "orc_realizado": 147721.82
-  },
-  {
-    "ano": 2025,
-    "funcao": "Previdência social",
-    "subfuncao": "Previdência do regime estatutário",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Não informado",
     "orc_inicial": -1240906.12,
     "orc_atualizado": 6343791.88,
@@ -3830,10 +3816,10 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Contratação por Tempo Determinado",
-    "orc_inicial": 4167558,
-    "orc_atualizado": 4167558,
-    "orc_empenhado": 4167558,
-    "orc_realizado": 2870215.05
+    "orc_inicial": 4314891.32,
+    "orc_atualizado": 4314891.32,
+    "orc_empenhado": 4314891.32,
+    "orc_realizado": 2865694.3
   },
   {
     "ano": 2025,
@@ -3844,9 +3830,9 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Indenizações e Restituições",
-    "orc_inicial": 4000,
-    "orc_atualizado": 4000,
-    "orc_empenhado": 4000,
+    "orc_inicial": 6400,
+    "orc_atualizado": 6400,
+    "orc_empenhado": 6400,
     "orc_realizado": 4000
   },
   {
@@ -3858,9 +3844,9 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Outras Despesas Variáveis - Pessoal Civil",
-    "orc_inicial": 405204.68,
-    "orc_atualizado": 405204.68,
-    "orc_empenhado": 405204.68,
+    "orc_inicial": 445321.03,
+    "orc_atualizado": 445321.03,
+    "orc_empenhado": 445321.03,
     "orc_realizado": 405204.68
   },
   {
@@ -3872,10 +3858,24 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Não informado",
-    "orc_inicial": -5078937.32,
-    "orc_atualizado": 41875581.68,
+    "orc_inicial": -6518217.91,
+    "orc_atualizado": 40436301.09,
     "orc_empenhado": 0,
     "orc_realizado": 0
+  },
+  {
+    "ano": 2025,
+    "funcao": "Previdência social",
+    "subfuncao": "Previdência do regime estatutário",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "APOSENTADORIAS E PENSOES CIVIS DA UNIAO",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Pessoal e Encargos Sociais",
+    "elemento_despesa": "Sentenças Judiciais",
+    "orc_inicial": 180215.24,
+    "orc_atualizado": 180215.24,
+    "orc_empenhado": 180215.24,
+    "orc_realizado": 147721.82
   },
   {
     "ano": 2025,
@@ -3928,9 +3928,9 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Contratação por Tempo Determinado",
-    "orc_inicial": 886204.12,
-    "orc_atualizado": 886204.12,
-    "orc_empenhado": 886204.12,
+    "orc_inicial": 976253.72,
+    "orc_atualizado": 976253.72,
+    "orc_empenhado": 976253.72,
     "orc_realizado": 886204.11
   },
   {
@@ -3956,9 +3956,9 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Despesas de Exercícios Anteriores",
-    "orc_inicial": 117566.94,
-    "orc_atualizado": 117566.94,
-    "orc_empenhado": 117566.94,
+    "orc_inicial": 1279348.26,
+    "orc_atualizado": 1279348.26,
+    "orc_empenhado": 1279348.26,
     "orc_realizado": 101332.24
   },
   {
@@ -4020,20 +4020,6 @@
   {
     "ano": 2025,
     "funcao": "Educação",
-    "subfuncao": "Outros encargos especiais",
-    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
-    "acao": "CONTRIBUICAO DA UNIAO, DE SUAS AUTARQUIAS E FUNDACOES PARA O CUSTEIO DO REGIME DE PREVIDENCIA DOS SERVIDORES PUBLICOS FEDERAIS",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Pessoal e Encargos Sociais",
-    "elemento_despesa": "Obrigações Patronais",
-    "orc_inicial": 33422104.76,
-    "orc_atualizado": 33422104.76,
-    "orc_empenhado": 33422104.76,
-    "orc_realizado": 31042941
-  },
-  {
-    "ano": 2025,
-    "funcao": "Educação",
     "subfuncao": "Ensino profissional",
     "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
     "acao": "ASSISTENCIA AOS ESTUDANTES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
@@ -4048,16 +4034,44 @@
   {
     "ano": 2025,
     "funcao": "Educação",
+    "subfuncao": "Outros encargos especiais",
+    "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
+    "acao": "CONTRIBUICAO DA UNIAO, DE SUAS AUTARQUIAS E FUNDACOES PARA O CUSTEIO DO REGIME DE PREVIDENCIA DOS SERVIDORES PUBLICOS FEDERAIS",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Pessoal e Encargos Sociais",
+    "elemento_despesa": "Obrigações Patronais",
+    "orc_inicial": 34822437.54,
+    "orc_atualizado": 34822437.54,
+    "orc_empenhado": 34822437.54,
+    "orc_realizado": 31042941
+  },
+  {
+    "ano": 2025,
+    "funcao": "Educação",
     "subfuncao": "Ensino profissional",
     "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
     "acao": "ASSISTENCIA AOS ESTUDANTES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Auxílio Financeiro a Estudantes",
-    "orc_inicial": 5161612.54,
-    "orc_atualizado": 5161612.54,
-    "orc_empenhado": 4953550.03,
-    "orc_realizado": 3135105.54
+    "orc_inicial": 5266062.54,
+    "orc_atualizado": 5266062.54,
+    "orc_empenhado": 5266062.54,
+    "orc_realizado": 3186668.06
+  },
+  {
+    "ano": 2025,
+    "funcao": "Educação",
+    "subfuncao": "Ensino profissional",
+    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
+    "acao": "ASSISTENCIA AOS ESTUDANTES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Não informado",
+    "orc_inicial": 974183.58,
+    "orc_atualizado": 1338350.58,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
   },
   {
     "ano": 2025,
@@ -4068,22 +4082,8 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Pessoal e Encargos Sociais",
     "elemento_despesa": "Não informado",
-    "orc_inicial": 5035834.24,
-    "orc_atualizado": 10493713.24,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
-  },
-  {
-    "ano": 2025,
-    "funcao": "Educação",
-    "subfuncao": "Ensino profissional",
-    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
-    "acao": "ASSISTENCIA AOS ESTUDANTES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": 1078633.58,
-    "orc_atualizado": 1442800.58,
+    "orc_inicial": 3635501.46,
+    "orc_atualizado": 9093380.46,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -4138,8 +4138,8 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Não informado",
-    "orc_inicial": 32466.84,
-    "orc_atualizado": 32466.84,
+    "orc_inicial": 27368.5,
+    "orc_atualizado": 27368.5,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -4174,20 +4174,6 @@
   {
     "ano": 2025,
     "funcao": "Educação",
-    "subfuncao": "Ensino profissional",
-    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
-    "acao": "REESTRUTURACAO E MODERNIZACAO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS DE CAPITAL",
-    "grupo_despesa": "Investimentos",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": 10000,
-    "orc_atualizado": 414721,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
-  },
-  {
-    "ano": 2025,
-    "funcao": "Educação",
     "subfuncao": "Formação de recursos humanos",
     "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
     "acao": "CAPACITACAO DE SERVIDORES PUBLICOS FEDERAIS EM PROCESSO DE QUALIFICACAO E REQUALIFICACAO",
@@ -4196,8 +4182,22 @@
     "elemento_despesa": "Outros Serviços de Terceiros - Pessoa Jurídica",
     "orc_inicial": 12515,
     "orc_atualizado": 12515,
-    "orc_empenhado": 11865,
+    "orc_empenhado": 12515,
     "orc_realizado": 6980
+  },
+  {
+    "ano": 2025,
+    "funcao": "Educação",
+    "subfuncao": "Ensino profissional",
+    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
+    "acao": "REESTRUTURACAO E MODERNIZACAO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+    "cat_economica": "DESPESAS DE CAPITAL",
+    "grupo_despesa": "Investimentos",
+    "elemento_despesa": "Não informado",
+    "orc_inicial": -300000,
+    "orc_atualizado": 104721,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
   },
   {
     "ano": 2025,
@@ -4208,8 +4208,22 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Não informado",
-    "orc_inicial": 600000,
-    "orc_atualizado": 240000,
+    "orc_inicial": 460000,
+    "orc_atualizado": 100000,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
+  },
+  {
+    "ano": 2025,
+    "funcao": "Educação",
+    "subfuncao": "Ensino profissional",
+    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
+    "acao": "REESTRUTURACAO E MODERNIZACAO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Auxílio Financeiro a Pesquisadores",
+    "orc_inicial": 140000,
+    "orc_atualizado": 140000,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -4230,14 +4244,42 @@
   {
     "ano": 2025,
     "funcao": "Educação",
+    "subfuncao": "Ensino profissional",
+    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
+    "acao": "REESTRUTURACAO E MODERNIZACAO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+    "cat_economica": "DESPESAS DE CAPITAL",
+    "grupo_despesa": "Investimentos",
+    "elemento_despesa": "Auxílio Financeiro a Pesquisadores",
+    "orc_inicial": 310000,
+    "orc_atualizado": 310000,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
+  },
+  {
+    "ano": 2025,
+    "funcao": "Educação",
+    "subfuncao": "Ensino profissional",
+    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
+    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Não informado",
+    "orc_inicial": 1972151.52,
+    "orc_atualizado": 3432800.52,
+    "orc_empenhado": 0,
+    "orc_realizado": 0
+  },
+  {
+    "ano": 2025,
+    "funcao": "Educação",
     "subfuncao": "Formação de recursos humanos",
     "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
     "acao": "CAPACITACAO DE SERVIDORES PUBLICOS FEDERAIS EM PROCESSO DE QUALIFICACAO E REQUALIFICACAO",
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Diárias - Civil",
-    "orc_inicial": 17000,
-    "orc_atualizado": 17000,
+    "orc_inicial": 19000,
+    "orc_atualizado": 19000,
     "orc_empenhado": 17000,
     "orc_realizado": 10327.5
   },
@@ -4250,10 +4292,10 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Material de Consumo",
-    "orc_inicial": 934239.42,
-    "orc_atualizado": 934239.42,
-    "orc_empenhado": 915633.25,
-    "orc_realizado": 480317.23
+    "orc_inicial": 924104.41,
+    "orc_atualizado": 924104.41,
+    "orc_empenhado": 904423.24,
+    "orc_realizado": 496776.68
   },
   {
     "ano": 2025,
@@ -4264,24 +4306,10 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Passagens e Despesas com Locomoção",
-    "orc_inicial": 12528.04,
-    "orc_atualizado": 12528.04,
-    "orc_empenhado": 12528.04,
+    "orc_inicial": 15626.38,
+    "orc_atualizado": 15626.38,
+    "orc_empenhado": 15626.38,
     "orc_realizado": 3947.42
-  },
-  {
-    "ano": 2025,
-    "funcao": "Educação",
-    "subfuncao": "Ensino profissional",
-    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
-    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Serviços de Tecnologia da Informação e Comunicação",
-    "orc_inicial": 1117745.94,
-    "orc_atualizado": 1117745.94,
-    "orc_empenhado": 869465.75,
-    "orc_realizado": 753945.26
   },
   {
     "ano": 2025,
@@ -4296,6 +4324,20 @@
     "orc_atualizado": 3276.17,
     "orc_empenhado": 3276.17,
     "orc_realizado": 286.34
+  },
+  {
+    "ano": 2025,
+    "funcao": "Educação",
+    "subfuncao": "Ensino profissional",
+    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
+    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Serviços de Tecnologia da Informação e Comunicação",
+    "orc_inicial": 1117745.94,
+    "orc_atualizado": 1117745.94,
+    "orc_empenhado": 871895.28,
+    "orc_realizado": 753945.26
   },
   {
     "ano": 2025,
@@ -4320,10 +4362,10 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Outros Serviços de Terceiros - Pessoa Jurídica",
-    "orc_inicial": 7530743.39,
-    "orc_atualizado": 7530743.39,
-    "orc_empenhado": 7243896.41,
-    "orc_realizado": 4991338.35
+    "orc_inicial": 7564575.11,
+    "orc_atualizado": 7564575.11,
+    "orc_empenhado": 7314907.16,
+    "orc_realizado": 5032513.31
   },
   {
     "ano": 2025,
@@ -4336,7 +4378,7 @@
     "elemento_despesa": "Auxílio Financeiro a Pesquisadores",
     "orc_inicial": 115500,
     "orc_atualizado": 115500,
-    "orc_empenhado": 109000,
+    "orc_empenhado": 115500,
     "orc_realizado": 0
   },
   {
@@ -4404,10 +4446,10 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Diárias - Civil",
-    "orc_inicial": 348935.5,
-    "orc_atualizado": 348935.5,
-    "orc_empenhado": 348935.5,
-    "orc_realizado": 287650.8
+    "orc_inicial": 352935.5,
+    "orc_atualizado": 352935.5,
+    "orc_empenhado": 347935.5,
+    "orc_realizado": 297164.52
   },
   {
     "ano": 2025,
@@ -4418,24 +4460,10 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Locação de Mão-de-Obra",
-    "orc_inicial": 15949249.4,
-    "orc_atualizado": 15949249.4,
-    "orc_empenhado": 15898412.3,
-    "orc_realizado": 11435102.22
-  },
-  {
-    "ano": 2025,
-    "funcao": "Educação",
-    "subfuncao": "Ensino profissional",
-    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
-    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Passagens e Despesas com Locomoção",
-    "orc_inicial": 321774.21,
-    "orc_atualizado": 321774.21,
-    "orc_empenhado": 321774.21,
-    "orc_realizado": 276188.97
+    "orc_inicial": 16190888.57,
+    "orc_atualizado": 16190888.57,
+    "orc_empenhado": 16185320.93,
+    "orc_realizado": 11520659.18
   },
   {
     "ano": 2025,
@@ -4450,6 +4478,20 @@
     "orc_atualizado": 235222.57,
     "orc_empenhado": 0,
     "orc_realizado": 0
+  },
+  {
+    "ano": 2025,
+    "funcao": "Educação",
+    "subfuncao": "Ensino profissional",
+    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
+    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Passagens e Despesas com Locomoção",
+    "orc_inicial": 329520.06,
+    "orc_atualizado": 329520.06,
+    "orc_empenhado": 329520.06,
+    "orc_realizado": 276188.97
   },
   {
     "ano": 2025,
@@ -4482,20 +4524,6 @@
   {
     "ano": 2025,
     "funcao": "Educação",
-    "subfuncao": "Ensino profissional",
-    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
-    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS DE CAPITAL",
-    "grupo_despesa": "Investimentos",
-    "elemento_despesa": "Equipamentos e Material Permanente",
-    "orc_inicial": 391331.86,
-    "orc_atualizado": 391331.86,
-    "orc_empenhado": 295686.91,
-    "orc_realizado": 78322.16
-  },
-  {
-    "ano": 2025,
-    "funcao": "Educação",
     "subfuncao": "Proteção e benefícios ao trabalhador",
     "programa": "PROGRAMA DE GESTAO E MANUTENCAO DO PODER EXECUTIVO",
     "acao": "ASSISTENCIA MEDICA E ODONTOLOGICA AOS SERVIDORES CIVIS, EMPREGADOS, MILITARES E SEUS DEPENDENTES",
@@ -4506,6 +4534,20 @@
     "orc_atualizado": 7436.51,
     "orc_empenhado": 7436.51,
     "orc_realizado": 7436.51
+  },
+  {
+    "ano": 2025,
+    "funcao": "Educação",
+    "subfuncao": "Ensino profissional",
+    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
+    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
+    "cat_economica": "DESPESAS DE CAPITAL",
+    "grupo_despesa": "Investimentos",
+    "elemento_despesa": "Equipamentos e Material Permanente",
+    "orc_inicial": 439956.12,
+    "orc_atualizado": 439956.12,
+    "orc_empenhado": 405971.66,
+    "orc_realizado": 78322.16
   },
   {
     "ano": 2025,
@@ -4547,7 +4589,7 @@
     "orc_inicial": 52114.61,
     "orc_atualizado": 52114.61,
     "orc_empenhado": 52114.61,
-    "orc_realizado": 46027.48
+    "orc_realizado": 46419.34
   },
   {
     "ano": 2025,
@@ -4558,24 +4600,10 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Outros Serviços de Terceiros - Pessoa Física",
-    "orc_inicial": 160512.46,
-    "orc_atualizado": 160512.46,
-    "orc_empenhado": 129361.2,
-    "orc_realizado": 62496.94
-  },
-  {
-    "ano": 2025,
-    "funcao": "Educação",
-    "subfuncao": "Ensino profissional",
-    "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
-    "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
-    "elemento_despesa": "Outros Serviços de Terceiros - Pessoa Jurídica",
-    "orc_inicial": 39072.38,
-    "orc_atualizado": 39072.38,
-    "orc_empenhado": 39072.38,
-    "orc_realizado": 27818.29
+    "orc_inicial": 161512.46,
+    "orc_atualizado": 161512.46,
+    "orc_empenhado": 130361.2,
+    "orc_realizado": 64676.82
   },
   {
     "ano": 2025,
@@ -4597,13 +4625,13 @@
     "subfuncao": "Ensino profissional",
     "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
     "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS DE CAPITAL",
-    "grupo_despesa": "Investimentos",
-    "elemento_despesa": "Não informado",
-    "orc_inicial": 431049.59,
-    "orc_atualizado": 805392.59,
-    "orc_empenhado": 0,
-    "orc_realizado": 0
+    "cat_economica": "DESPESAS CORRENTES",
+    "grupo_despesa": "Outras Despesas Correntes",
+    "elemento_despesa": "Outros Serviços de Terceiros - Pessoa Jurídica",
+    "orc_inicial": 39072.38,
+    "orc_atualizado": 39072.38,
+    "orc_empenhado": 39072.38,
+    "orc_realizado": 28377.58
   },
   {
     "ano": 2025,
@@ -4611,11 +4639,11 @@
     "subfuncao": "Ensino profissional",
     "programa": "EDUCACAO PROFISSIONAL E TECNOLOGICA QUE TRANSFORMA",
     "acao": "FUNCIONAMENTO DAS INSTITUICOES DA REDE FEDERAL DE EDUCACAO PROFISSIONAL, CIENTIFICA E TECNOLOGICA",
-    "cat_economica": "DESPESAS CORRENTES",
-    "grupo_despesa": "Outras Despesas Correntes",
+    "cat_economica": "DESPESAS DE CAPITAL",
+    "grupo_despesa": "Investimentos",
     "elemento_despesa": "Não informado",
-    "orc_inicial": 2250233.25,
-    "orc_atualizado": 3710882.25,
+    "orc_inicial": 382425.33,
+    "orc_atualizado": 756768.33,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -4642,8 +4670,8 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Não informado",
-    "orc_inicial": 1020514.93,
-    "orc_atualizado": 3550386.93,
+    "orc_inicial": 678379.46,
+    "orc_atualizado": 3208251.46,
     "orc_empenhado": 0,
     "orc_realizado": 0
   },
@@ -4670,9 +4698,9 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Auxílio-Transporte",
-    "orc_inicial": 1875486.01,
-    "orc_atualizado": 1875486.01,
-    "orc_empenhado": 1875486.01,
+    "orc_inicial": 2101411.52,
+    "orc_atualizado": 2101411.52,
+    "orc_empenhado": 2101411.52,
     "orc_realizado": 1819777.12
   },
   {
@@ -4698,10 +4726,10 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Contratação por Tempo Determinado",
-    "orc_inicial": 1077052.65,
-    "orc_atualizado": 1077052.65,
-    "orc_empenhado": 1077052.65,
-    "orc_realizado": 1026739.58
+    "orc_inicial": 1193245.41,
+    "orc_atualizado": 1193245.41,
+    "orc_empenhado": 1145336.44,
+    "orc_realizado": 1025921.4
   },
   {
     "ano": 2025,
@@ -4712,9 +4740,9 @@
     "cat_economica": "DESPESAS CORRENTES",
     "grupo_despesa": "Outras Despesas Correntes",
     "elemento_despesa": "Sentenças Judiciais",
-    "orc_inicial": 16186,
-    "orc_atualizado": 16186,
-    "orc_empenhado": 16186,
+    "orc_inicial": 16203.2,
+    "orc_atualizado": 16203.2,
+    "orc_empenhado": 16203.2,
     "orc_realizado": 14626.74
   }
 ]
