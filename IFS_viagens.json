@@ -40448,12 +40448,45 @@
   },
   {
     "ano": 2026,
+    "nome": "JOSE WLAMIR BARRETO SOARES",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-01-12",
+    "fim": "2026-01-16",
+    "destino": "Salvador/BA",
+    "valor_diaria": 1442.95,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "MARIANA EMANUELLE BARRETO DE GOIS",
     "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
     "inicio": "2026-01-22",
     "fim": "2026-01-22",
     "destino": "São Cristóvão/SE",
     "valor_diaria": 114.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "KARINNE SANTIAGO ALMEIDA",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-01-12",
+    "fim": "2026-01-16",
+    "destino": "Salvador/BA",
+    "valor_diaria": 1442.95,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "ALYSSON TAVORA CHAGAS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-01-12",
+    "fim": "2026-01-16",
+    "destino": "Salvador/BA",
+    "valor_diaria": 1442.95,
     "valor_passagem": 0,
     "urgencia": "SIM"
   },
@@ -40910,11 +40943,66 @@
   },
   {
     "ano": 2026,
+    "nome": "JOSE OSMAN DOS SANTOS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-02-25",
+    "fim": "2026-02-25",
+    "destino": "Estância/SE",
+    "valor_diaria": 174.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "FELIPE MATHEUS DE OLIVEIRA CARVALHO",
     "cargo": "ENGENHEIRO-AREA",
     "inicio": "2026-02-26",
     "fim": "2026-02-26",
     "destino": "Tobias Barreto/SE",
+    "valor_diaria": 114.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "ANTONIO ALMEIDA DOS SANTOS FILHO",
+    "cargo": "TECNICO DE LABORATORIO AREA",
+    "inicio": "2026-03-03",
+    "fim": "2026-03-03",
+    "destino": "Japaratuba/SE",
+    "valor_diaria": 114.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "ANTONIO ALMEIDA DOS SANTOS FILHO",
+    "cargo": "TECNICO DE LABORATORIO AREA",
+    "inicio": "2026-03-10",
+    "fim": "2026-03-10",
+    "destino": "Japaratuba/SE",
+    "valor_diaria": 114.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LEANDRO TELES SANTANA",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-03-03",
+    "fim": "2026-03-03",
+    "destino": "Japaratuba/SE",
+    "valor_diaria": 114.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LEANDRO TELES SANTANA",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-03-10",
+    "fim": "2026-03-10",
+    "destino": "Japaratuba/SE",
     "valor_diaria": 114.09,
     "valor_passagem": 0,
     "urgencia": "SIM"
@@ -40937,6 +41025,28 @@
     "inicio": "2026-02-25",
     "fim": "2026-02-25",
     "destino": "Estância/SE",
+    "valor_diaria": 174.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "JOSE OSMAN DOS SANTOS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-03-06",
+    "fim": "2026-03-06",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 174.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "JOSE OSMAN DOS SANTOS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-03-05",
+    "fim": "2026-03-05",
+    "destino": "Propriá/SE",
     "valor_diaria": 174.09,
     "valor_passagem": 0,
     "urgencia": "SIM"
