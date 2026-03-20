@@ -29316,6 +29316,17 @@
   },
   {
     "ano": 2024,
+    "nome": "THEO MARTINS LUBLINER",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2024-11-29",
+    "fim": "2024-11-29",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 134.61,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2024,
     "nome": "JOSE ADILSON GONCALVES LIMA",
     "cargo": "MOTORISTA",
     "inicio": "2024-11-26",
@@ -30059,6 +30070,28 @@
     "fim": "2024-12-10",
     "destino": "Riachão do Dantas/SE",
     "valor_diaria": 167.5,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2024,
+    "nome": "THEO MARTINS LUBLINER",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2024-12-03",
+    "fim": "2024-12-03",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 134.61,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2024,
+    "nome": "THEO MARTINS LUBLINER",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2024-12-02",
+    "fim": "2024-12-02",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 134.61,
     "valor_passagem": 0,
     "urgencia": "SIM"
   },
@@ -40685,6 +40718,28 @@
     "fim": "2026-01-28",
     "destino": "Estância/SE",
     "valor_diaria": 114.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "PEDRO ERNESTO OLIVEIRA DA CRUZ",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-02-05",
+    "fim": "2026-02-05",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 136.59,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "DANILLO SIQUEIRA RAMOS",
+    "cargo": "ASSISTENTE EM ADMINISTRAçãO",
+    "inicio": "2026-02-09",
+    "fim": "2026-02-12",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 1116.36,
     "valor_passagem": 0,
     "urgencia": "SIM"
   },
