@@ -41105,5 +41105,16 @@
     "valor_diaria": 174.09,
     "valor_passagem": 0,
     "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "DEBORA LIMA SIQUEIRA",
+    "cargo": "PSICOLOGO AREA",
+    "inicio": "2026-03-18",
+    "fim": "2026-03-18",
+    "destino": "Tobias Barreto/SE",
+    "valor_diaria": 114.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
   }
 ]
