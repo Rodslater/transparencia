@@ -41933,6 +41933,17 @@
   },
   {
     "ano": 2026,
+    "nome": "JEANNE DE SOUZA E SILVA",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-03-11",
+    "fim": "2026-03-11",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 204.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "PAMELA SANTANA DA CRUZ",
     "cargo": "",
     "inicio": "2026-03-13",
@@ -42417,6 +42428,17 @@
   },
   {
     "ano": 2026,
+    "nome": "MARIO ANDRE DE FREITAS FARIAS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-03-26",
+    "fim": "2026-03-26",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 174.09,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "SUZANA MICHELE SANTOS FONSECA",
     "cargo": "",
     "inicio": "2026-03-18",
@@ -42667,6 +42689,17 @@
     "valor_diaria": 174.09,
     "valor_passagem": 0,
     "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARIO ANDRE DE FREITAS FARIAS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-04-16",
+    "fim": "2026-04-16",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 174.09,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
   },
   {
     "ano": 2026,
@@ -43220,6 +43253,17 @@
   },
   {
     "ano": 2026,
+    "nome": "DAYANE DE OLIVEIRA BARBOSA",
+    "cargo": "ASSISTENTE DE ALUNO",
+    "inicio": "2026-05-27",
+    "fim": "2026-05-27",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "JUCICLEA SANTOS ALVES",
     "cargo": "TECNICO DE LABORATORIO AREA",
     "inicio": "2026-04-13",
@@ -43514,6 +43558,28 @@
     "valor_diaria": 113.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARIO ANDRE DE FREITAS FARIAS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-05-07",
+    "fim": "2026-05-07",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARIO ANDRE DE FREITAS FARIAS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-05-21",
+    "fim": "2026-05-21",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
   },
   {
     "ano": 2026,
@@ -43932,6 +43998,17 @@
     "valor_diaria": 173.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "PAULO DURVAL BARRETO DE ARAUJO",
+    "cargo": "ASSISTENTE EM ADMINISTRAçãO",
+    "inicio": "2026-06-15",
+    "fim": "2026-06-20",
+    "destino": "Brasília/DF",
+    "valor_diaria": 3124.1,
+    "valor_passagem": 2965.37,
+    "urgencia": "NÃO"
   },
   {
     "ano": 2026,
@@ -44771,6 +44848,17 @@
   },
   {
     "ano": 2026,
+    "nome": "JOSE APRIGIO CARNEIRO NETO",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-17",
+    "fim": "2026-06-17",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
+  },
+  {
+    "ano": 2026,
     "nome": "FABRICIO DE REZENDE PRADO",
     "cargo": "AUX EM ADMINISTRACAO",
     "inicio": "2026-06-15",
@@ -44793,6 +44881,28 @@
   },
   {
     "ano": 2026,
+    "nome": "CALIANE COSTA DOS SANTOS DA CONCEICAO",
+    "cargo": "PEDAGOGO-AREA",
+    "inicio": "2026-05-13",
+    "fim": "2026-05-13",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "CALIANE COSTA DOS SANTOS DA CONCEICAO",
+    "cargo": "PEDAGOGO-AREA",
+    "inicio": "2026-05-27",
+    "fim": "2026-05-27",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "ANTONIO ALMEIDA DOS SANTOS FILHO",
     "cargo": "TECNICO DE LABORATORIO AREA",
     "inicio": "2026-06-02",
@@ -44801,6 +44911,28 @@
     "valor_diaria": 113.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "CALIANE COSTA DOS SANTOS DA CONCEICAO",
+    "cargo": "PEDAGOGO-AREA",
+    "inicio": "2026-06-03",
+    "fim": "2026-06-03",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "JULIANA OLIVEIRA MALTA CARDOSO",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-06-17",
+    "fim": "2026-06-17",
+    "destino": "Nossa Senhora da Glória/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
   },
   {
     "ano": 2026,
@@ -44848,6 +44980,17 @@
   },
   {
     "ano": 2026,
+    "nome": "CALIANE COSTA DOS SANTOS DA CONCEICAO",
+    "cargo": "PEDAGOGO-AREA",
+    "inicio": "2026-06-10",
+    "fim": "2026-06-10",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "LEANDRO TELES SANTANA",
     "cargo": "ENGENHEIRO-AREA",
     "inicio": "2026-06-15",
@@ -44867,6 +45010,28 @@
     "valor_diaria": 173.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARCUS ALEXANDRE NORONHA DE BRITO",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-18",
+    "fim": "2026-06-18",
+    "destino": "Japaratuba/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARCUS ALEXANDRE NORONHA DE BRITO",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-16",
+    "fim": "2026-06-16",
+    "destino": "Japaratuba/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
   },
   {
     "ano": 2026,
@@ -44894,6 +45059,17 @@
     "ano": 2026,
     "nome": "MARCUS ALEXANDRE NORONHA DE BRITO",
     "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-15",
+    "fim": "2026-06-15",
+    "destino": "Estância/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARCUS ALEXANDRE NORONHA DE BRITO",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
     "inicio": "2026-06-12",
     "fim": "2026-06-12",
     "destino": "Estância/SE",
@@ -44911,6 +45087,17 @@
     "valor_diaria": 173.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARCUS ALEXANDRE NORONHA DE BRITO",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-19",
+    "fim": "2026-06-19",
+    "destino": "Estância/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
   },
   {
     "ano": 2026,
@@ -44991,6 +45178,17 @@
   },
   {
     "ano": 2026,
+    "nome": "ALLIVIA ROUSE CARREGOSA RABBANI",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-15",
+    "fim": "2026-06-19",
+    "destino": "Brasília/DF",
+    "valor_diaria": 1736.6,
+    "valor_passagem": 2208.41,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "MARIO ANDRE DE FREITAS FARIAS",
     "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
     "inicio": "2026-06-09",
@@ -45046,12 +45244,34 @@
   },
   {
     "ano": 2026,
+    "nome": "CHIRLAINE CRISTINE GONCALVES",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-09",
+    "fim": "2026-06-09",
+    "destino": "Estância/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "IDER DE SANTANA SANTOS",
     "cargo": "ELETRICISTA",
     "inicio": "2026-06-12",
     "fim": "2026-06-12",
     "destino": "Propriá/SE",
     "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "CARINE VALENCA DOS SANTOS",
+    "cargo": "PEDAGOGO-AREA",
+    "inicio": "2026-06-10",
+    "fim": "2026-06-10",
+    "destino": "Estância/SE",
+    "valor_diaria": 113.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
   },
@@ -45084,6 +45304,61 @@
     "inicio": "2026-06-11",
     "fim": "2026-06-11",
     "destino": "Estância/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARCUS ALEXANDRE NORONHA DE BRITO",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-17",
+    "fim": "2026-06-17",
+    "destino": "Nossa Senhora da Glória/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "ALLIVIA ROUSE CARREGOSA RABBANI",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-09",
+    "fim": "2026-06-10",
+    "destino": "Estância/SE",
+    "valor_diaria": 394.14,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LEANDRO TELES SANTANA",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-06-25",
+    "fim": "2026-06-25",
+    "destino": "Nossa Senhora da Glória/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARCUS ALEXANDRE NORONHA DE BRITO",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-25",
+    "fim": "2026-06-25",
+    "destino": "Nossa Senhora da Glória/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LUCAS LIMA CONCEICAO",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-06-25",
+    "fim": "2026-06-25",
+    "destino": "Nossa Senhora da Glória/SE",
     "valor_diaria": 113.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
