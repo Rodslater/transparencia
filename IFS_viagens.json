@@ -44562,6 +44562,17 @@
   },
   {
     "ano": 2026,
+    "nome": "FERNANDO SANDES SOARES",
+    "cargo": "TECNICO DE LABORATORIO AREA",
+    "inicio": "2026-06-17",
+    "fim": "2026-06-17",
+    "destino": "Laranjeiras/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
+  },
+  {
+    "ano": 2026,
     "nome": "ALAILSON ROCHA SANTANA",
     "cargo": "AUXILIAR DE ENFERMAGEM",
     "inicio": "2026-05-26",
@@ -44867,6 +44878,28 @@
     "valor_diaria": 113.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARIANA EMANUELLE BARRETO DE GOIS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-12",
+    "fim": "2026-06-12",
+    "destino": "Salgado/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARIANA EMANUELLE BARRETO DE GOIS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-07-07",
+    "fim": "2026-07-07",
+    "destino": "Maruim/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
   },
   {
     "ano": 2026,
@@ -45332,6 +45365,17 @@
   },
   {
     "ano": 2026,
+    "nome": "DIELLE OLIVEIRA FILOCRE RODRIGUES",
+    "cargo": "ADMINISTRADOR",
+    "inicio": "2026-06-12",
+    "fim": "2026-06-12",
+    "destino": "Propriá/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "FELIPPE ROCHA PRESADO MENEZES DE BARROS",
     "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
     "inicio": "2026-05-11",
@@ -45376,12 +45420,67 @@
   },
   {
     "ano": 2026,
+    "nome": "ANDERSON RIBEIRO DOS SANTOS",
+    "cargo": "ASSISTENTE EM ADMINISTRAçãO",
+    "inicio": "2026-06-10",
+    "fim": "2026-06-10",
+    "destino": "Estância/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "IGOR OLIVEIRA VASCONCELOS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-17",
+    "fim": "2026-06-17",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "MARIO ANDRE DE FREITAS FARIAS",
     "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
     "inicio": "2026-06-17",
     "fim": "2026-06-17",
     "destino": "Itabaiana/SE",
     "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "CHRISTIANNE ROCHA GOMES",
+    "cargo": "PSICOLOGO AREA",
+    "inicio": "2026-06-15",
+    "fim": "2026-06-15",
+    "destino": "Estância/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "ELIANA ALVES BATISTA SANTOS",
+    "cargo": "TRADUTOR INTERPRETE DE LINGUAGEM SINAIS",
+    "inicio": "2026-06-15",
+    "fim": "2026-06-15",
+    "destino": "Estância/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "ADRIANA ARAUJO DE LISBOA",
+    "cargo": "ASSISTENTE SOCIAL",
+    "inicio": "2026-06-15",
+    "fim": "2026-06-15",
+    "destino": "Estância/SE",
+    "valor_diaria": 113.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
   },
@@ -45497,6 +45596,50 @@
   },
   {
     "ano": 2026,
+    "nome": "MARCELO DE AQUINO RESENDE",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-07-01",
+    "fim": "2026-07-04",
+    "destino": "Natal/RN",
+    "valor_diaria": 1262.46,
+    "valor_passagem": 3934.23,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "JOSE ADILSON GONCALVES LIMA",
+    "cargo": "MOTORISTA",
+    "inicio": "2026-06-10",
+    "fim": "2026-06-10",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "ALYSSON SANTOS BARRETO",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-07-08",
+    "fim": "2026-07-11",
+    "destino": "Brasília/DF",
+    "valor_diaria": 1732.46,
+    "valor_passagem": 6213.03,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "DANILLO SIQUEIRA RAMOS",
+    "cargo": "ASSISTENTE EM ADMINISTRAçãO",
+    "inicio": "2026-07-03",
+    "fim": "2026-07-03",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "AMANDA FONTES ARAGAO DIAS",
     "cargo": "ARQUITETO E URBANISTA",
     "inicio": "2026-06-19",
@@ -45534,6 +45677,72 @@
     "cargo": "ENGENHEIRO-AREA",
     "inicio": "2026-07-02",
     "fim": "2026-07-02",
+    "destino": "Japaratuba/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "FRANCIELLY OTAVIA GOMES MATEUS",
+    "cargo": "",
+    "inicio": "2026-06-15",
+    "fim": "2026-06-15",
+    "destino": "Estância/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARIO ANDRE DE FREITAS FARIAS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-07-02",
+    "fim": "2026-07-02",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "MARIO ANDRE DE FREITAS FARIAS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-07-09",
+    "fim": "2026-07-09",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LEANDRO TELES SANTANA",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-07-13",
+    "fim": "2026-07-13",
+    "destino": "Propriá/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LEANDRO TELES SANTANA",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-07-07",
+    "fim": "2026-07-07",
+    "destino": "Japaratuba/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LEANDRO TELES SANTANA",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-07-09",
+    "fim": "2026-07-09",
     "destino": "Japaratuba/SE",
     "valor_diaria": 113.32,
     "valor_passagem": 0,
