@@ -42989,6 +42989,17 @@
   },
   {
     "ano": 2026,
+    "nome": "LUCIANA BITENCOURT OLIVEIRA",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-04-22",
+    "fim": "2026-04-22",
+    "destino": "Poço Redondo/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "ARYANA SOARES CARDONA",
     "cargo": "ODONTOLOGO",
     "inicio": "2026-04-22",
@@ -45893,6 +45904,17 @@
   },
   {
     "ano": 2026,
+    "nome": "LUCIANA BITENCOURT OLIVEIRA",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-04-08",
+    "fim": "2026-04-08",
+    "destino": "Nossa Senhora da Glória/SE",
+    "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "LEVI DOS SANTOS OLIVEIRA",
     "cargo": "NUTRICIONISTA-HABILITACAO",
     "inicio": "2026-04-08",
@@ -45910,6 +45932,17 @@
     "fim": "2026-04-09",
     "destino": "Propriá/SE",
     "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LUCIANA BITENCOURT OLIVEIRA",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-04-09",
+    "fim": "2026-04-09",
+    "destino": "Propriá/SE",
+    "valor_diaria": 173.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
   },
