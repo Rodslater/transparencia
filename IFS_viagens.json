@@ -44661,6 +44661,17 @@
   },
   {
     "ano": 2026,
+    "nome": "JACSON DA CRUZ NASCIMENTO",
+    "cargo": "",
+    "inicio": "2026-05-14",
+    "fim": "2026-05-14",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "RAISA MARIA SILVEIRA",
     "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
     "inicio": "2026-05-11",
@@ -45838,6 +45849,17 @@
   },
   {
     "ano": 2026,
+    "nome": "MARIO ANDRE DE FREITAS FARIAS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-08-10",
+    "fim": "2026-08-12",
+    "destino": "São Paulo/SP",
+    "valor_diaria": 1432.46,
+    "valor_passagem": 1292.5,
+    "urgencia": "NÃO"
+  },
+  {
+    "ano": 2026,
     "nome": "ALLIVIA ROUSE CARREGOSA RABBANI",
     "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
     "inicio": "2026-06-09",
@@ -46058,6 +46080,17 @@
   },
   {
     "ano": 2026,
+    "nome": "JOSE OSMAN DOS SANTOS",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-08-10",
+    "fim": "2026-08-12",
+    "destino": "São Paulo/SP",
+    "valor_diaria": 1432.46,
+    "valor_passagem": 1292.5,
+    "urgencia": "NÃO"
+  },
+  {
+    "ano": 2026,
     "nome": "MARIO ANDRE DE FREITAS FARIAS",
     "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
     "inicio": "2026-07-02",
@@ -46152,6 +46185,28 @@
     "fim": "2026-07-14",
     "destino": "Japaratuba/SE",
     "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "VANINA NUNES SILVEIRA",
+    "cargo": "ASSISTENTE EM ADMINISTRAçãO",
+    "inicio": "2026-07-20",
+    "fim": "2026-07-24",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 1439.1,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "DANILLO SIQUEIRA RAMOS",
+    "cargo": "ASSISTENTE EM ADMINISTRAçãO",
+    "inicio": "2026-07-20",
+    "fim": "2026-07-24",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 1439.1,
     "valor_passagem": 0,
     "urgencia": "SIM"
   },
@@ -46531,6 +46586,17 @@
   },
   {
     "ano": 2026,
+    "nome": "WELKSON PINHEIRO DO NASCIMENTO",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-07-20",
+    "fim": "2026-07-20",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "MATHEUS VANCINE JOSE GUIMARAES PEREIRA",
     "cargo": "DESENHISTA-PROJETISTA",
     "inicio": "2026-07-02",
@@ -46762,6 +46828,17 @@
   },
   {
     "ano": 2026,
+    "nome": "JULIANA OLIVEIRA MALTA CARDOSO",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-08-13",
+    "fim": "2026-08-13",
+    "destino": "Nossa Senhora da Glória/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "MARCIO REMBRANDT DO NASCIMENTO LIMA",
     "cargo": "ENGENHEIRO-AREA",
     "inicio": "2026-08-05",
@@ -46819,6 +46896,17 @@
     "ano": 2026,
     "nome": "LEANDRO TELES SANTANA",
     "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-08-20",
+    "fim": "2026-08-20",
+    "destino": "Japaratuba/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LEANDRO TELES SANTANA",
+    "cargo": "ENGENHEIRO-AREA",
     "inicio": "2026-08-10",
     "fim": "2026-08-10",
     "destino": "Propriá/SE",
@@ -46836,5 +46924,27 @@
     "valor_diaria": 113.32,
     "valor_passagem": 0,
     "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "JOSE ADILSON GONCALVES LIMA",
+    "cargo": "MOTORISTA",
+    "inicio": "2026-07-24",
+    "fim": "2026-07-24",
+    "destino": "Pacatuba/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LEANDRO TELES SANTANA",
+    "cargo": "ENGENHEIRO-AREA",
+    "inicio": "2026-08-24",
+    "fim": "2026-08-24",
+    "destino": "Propriá/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
   }
 ]
