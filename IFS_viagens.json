@@ -45112,6 +45112,17 @@
   },
   {
     "ano": 2026,
+    "nome": "TOMAS GUILHERME PEREIRA DA SILVA",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-06-16",
+    "fim": "2026-06-16",
+    "destino": "Poço Redondo/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "MARIANA EMANUELLE BARRETO DE GOIS",
     "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
     "inicio": "2026-06-12",
@@ -46009,6 +46020,17 @@
     "fim": "2026-06-10",
     "destino": "Itabaiana/SE",
     "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "DANIELLE FERREIRA DE MELO",
+    "cargo": "ADMINISTRADOR",
+    "inicio": "2026-07-09",
+    "fim": "2026-07-09",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
     "valor_passagem": 0,
     "urgencia": "SIM"
   },
