@@ -49193,6 +49193,28 @@
   },
   {
     "ano": 2026,
+    "nome": "ROSANA ROCHA SIQUEIRA",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-10-29",
+    "fim": "2026-10-29",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
+    "valor_passagem": 0,
+    "urgencia": "NÃO"
+  },
+  {
+    "ano": 2026,
+    "nome": "FRANKLIN MAGALHAES RIBEIRO JUNIOR",
+    "cargo": "PROFESSOR ENS BASICO TECN TECNOLOGICO",
+    "inicio": "2026-10-14",
+    "fim": "2026-10-14",
+    "destino": "Itabaiana/SE",
+    "valor_diaria": 113.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
     "nome": "LEANDRO TELES SANTANA",
     "cargo": "ENGENHEIRO-AREA",
     "inicio": "2026-10-08",
@@ -49353,6 +49375,17 @@
     "fim": "2026-10-09",
     "destino": "Estância/SE",
     "valor_diaria": 173.32,
+    "valor_passagem": 0,
+    "urgencia": "SIM"
+  },
+  {
+    "ano": 2026,
+    "nome": "LUCAS DE ARAUJO SOUZA",
+    "cargo": "TECNICO EM EDIFICACOES",
+    "inicio": "2026-10-27",
+    "fim": "2026-10-27",
+    "destino": "Aracaju/SE",
+    "valor_diaria": 135.82,
     "valor_passagem": 0,
     "urgencia": "SIM"
   }
